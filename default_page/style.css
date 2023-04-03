@@ -1,0 +1,58 @@
+/* Background Image Styles */
+body{
+    background-image: url('background-photo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/*Container Styles */
+.container{
+    position: relative;
+    z-index: 1;
+    background-color: #E2D7B7;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 10cm;
+}
+
+
+/* Footer Styles */
+.container_footer{
+    background-color: rgb(102, 102, 102);
+    background-size: cover;
+    padding: 20px;
+    text-align: left;
+    padding-bottom: 1cm;
+}
+
+/* Menu Bar Styles */
+nav{
+    border-bottom: #605B3E;
+    position: relative;
+    background-color: #E2D7B7
+    /*z-index: 2;*/
+}
+
+nav>ul{
+    list-style: none;
+    display: flex;
+    padding-left: 150px;
+    background-color: #E2D7B7;
+    border-style: solid;
+    border-color: #605B3E;
+    border-left: 0px;
+    border-right: 0px;
+    
+}
+ul>li{
+    margin-top: 35px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+li>a{
+    color:#FFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
