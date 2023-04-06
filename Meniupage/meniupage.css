@@ -8,7 +8,7 @@ body{
 .container{
     position: relative;
     z-index: 1;
-    background-color: #e2d7b7;
+    background-color: #ffffff;
     background-size: cover;
     background-position: center;
     margin-top: 40px;
@@ -83,7 +83,7 @@ p{
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-right: 400px;
+    margin-right: 300px;
 }
   
 .ceai_right {
@@ -101,8 +101,17 @@ p{
 }
 
 .price{
-    margin-left: 270px;
-   
+    margin-left: 280px;
+}
+
+.add_to_cart{
+    margin-left: 5px;
+}
+
+.price_and_add_to_cart
+{
+    display: flex;
+    justify-content: space-between;
 }
 
 h4{
