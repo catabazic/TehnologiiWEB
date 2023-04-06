@@ -75,25 +75,19 @@ p{
     flex-direction: column;
     align-items: center;
 }
-.ceai-container {
+.meniu-container {
     display: flex;
 }
   
-.ceai {
+.items {
     flex: 1;
     display: flex;
     flex-direction: column;
     margin-right: 300px;
 }
   
-.ceai_right {
+.items_right {
     flex: 1;
-}
-
-.ceai1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .item{
@@ -101,11 +95,11 @@ p{
 }
 
 .price{
-    margin-left: 280px;
+    margin-left: 275px;
 }
 
 .add_to_cart{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .price_and_add_to_cart
@@ -118,31 +112,27 @@ h4{
     margin-top: 2%;
 }
 
-.ceai2 {
-    margin-top: 20px;
-}
-
 img{
     border-radius: 50%;
 }
 
-.ceai > div {
+.items > div {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
   
-.ceai_right > div > img {
+.items_right > div > img {
     margin-right: 20px;
 }
 
-.ceai_right > div {
+.items_right > div {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
   
-.ceai > div > img {
+.items > div > img {
     margin-right: 20px;
 }
 
