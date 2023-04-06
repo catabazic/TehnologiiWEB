@@ -22,6 +22,14 @@ h1{
     text-align: center;
 }
 
+h3{
+    line-height: 0.7;
+}
+
+p{
+    line-height: 0.7;
+}
+
 .hr-lines{
     max-width: 500px;
     margin: 100px;
@@ -67,11 +75,38 @@ h1{
     flex-direction: column;
     align-items: center;
 }
-
+.ceai-container {
+    display: flex;
+}
+  
 .ceai {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin-right: 850px;
+    margin-right: 400px;
+}
+  
+.ceai_right {
+    flex: 1;
+}
+
+.ceai1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    flex: 1;
+}
+
+.price{
+    margin-left: 270px;
+   
+}
+
+h4{
+    margin-top: 2%;
 }
 
 .ceai2 {
@@ -86,11 +121,22 @@ img{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
+}
   
-  .ceai > div > img {
+.ceai_right > div > img {
     margin-right: 20px;
-  }
+}
+
+.ceai_right > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.ceai > div > img {
+    margin-right: 20px;
+}
+
 
 /* Footer Styles */
 .container_footer{
