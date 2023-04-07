@@ -1,6 +1,6 @@
 /* Background Image Styles */
 body{
-    height: 100%;
+    height: 100vh;
     margin: 0;
     background-image: url('../imagini/background-photo.jpg');
     background-size: 120%;
@@ -13,21 +13,18 @@ body{
     background-color: #e2d7b7;
     background-size: cover;
     background-position: center;
-    margin-top: 100px;
+    margin-top: 20vh;
     margin-left: 30px;
     margin-right: 30px;
     padding-bottom: 1cm;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-    
-    height: auto ;
-    
+    min-height: 80vh;    
 }
 
 main {
-    flex-grow: 1;
-  }
+    min-height: 70vh;
+}
   
 
 .container_main {
@@ -70,6 +67,7 @@ main {
     text-align: center;
 }.container_main>h2{
     margin: 0;
+    padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -91,7 +89,6 @@ footer{
     padding: 20px;
     text-align: left;
     padding-bottom: 1cm;
-    margin-top: auto;
 }
 /* Menu Bar Styles */
 
@@ -112,6 +109,7 @@ footer{
     display: flex;
 }
 nav{
+    height: 10vh;
     border-bottom: #605B3E;
     position: relative;
     background-color: #E2D7B7;
