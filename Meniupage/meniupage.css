@@ -39,7 +39,7 @@ p{
 .hr-lines:before{
     content:" ";
     height: 2px;
-    width: 130px;
+    width: 190px;
     background: black;
     display: block;
     top: 50%;
@@ -49,7 +49,7 @@ p{
 .hr-lines:after{
     content:" ";
     height: 2px;
-    width: 130px;
+    width: 190px;
     background: black;
     display: block;
     top: 50%;
