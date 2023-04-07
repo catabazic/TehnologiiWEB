@@ -20,8 +20,7 @@ body{
     padding-bottom: 1cm;
     display: flex;
     flex-direction: column;
-    
-  height: 80vh ;
+    height: 80vh ;
     
 }
 main {
@@ -39,6 +38,10 @@ main {
     max-width: 100%;
     max-height:100%;
 
+}
+
+p{
+    line-height: 0.9;
 }
   
 .text {
@@ -63,7 +66,7 @@ footer{
 }
 .cart-icon{
     margin-right: 50px;
-    margin-left: 450px;
+    margin-left: 350px;
     margin-top: 20px;
     margin-bottom: 0.3%;
 }
@@ -74,7 +77,7 @@ footer{
     display: flex;
 }
 nav{
-    height: 70vh;
+    height: 10vh;
     border-bottom: #605B3E;
     position: relative;
     background-color: #E2D7B7;
