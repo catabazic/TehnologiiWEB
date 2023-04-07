@@ -10,31 +10,20 @@ body{
 .container{
     position: relative;
     z-index: 1;
-    background-color: #e2d7b7;
+    background-color: #ffffff;
     background-size: cover;
     background-position: center;
     margin-top: 20vh;
     margin-left: 30px;
     margin-right: 30px;
+    padding-bottom: 1cm;
     display: flex;
     flex-direction: column;
-    height: 80vh;
-    /*height: auto ;*/
+    
+    
 }
 main {
     min-height: 70vh;
-}
-  
-
-.container_main {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: auto;
-    min-height: 100%;
-    display: grid;
-    background-color: #ffff;
-    background-size: cover;
-    background-position: center;
 }
 .container_main>h4{
     padding-top: 50px;
