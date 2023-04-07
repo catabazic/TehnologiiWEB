@@ -20,12 +20,12 @@ body{
     padding-bottom: 1cm;
     display: flex;
     flex-direction: column;
-    height: 80vh ;
+
     
 }
 main {
     min-height: 70vh;
-}
+  }
   
 
 .container_main {
