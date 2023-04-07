@@ -22,11 +22,13 @@ body{
     /*height: auto ;*/
 }
 main {
-    height: 70vh;
+    min-height: 70vh;
 }
   
 
 .container_main {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     height: auto;
     min-height: 100%;
     display: grid;
