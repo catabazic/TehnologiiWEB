@@ -6,80 +6,25 @@ body{
     background-size: 120%;
     background-position: center;
 }
-
 /*Container Styles */
 .container{
     position: relative;
+    z-index: 1;
     background-color: #e2d7b7;
     background-size: cover;
     background-position: center;
     margin-top: 20vh;
     margin-left: 30px;
     margin-right: 30px;
+    /*padding-bottom: 1cm;*/
     padding-bottom: 1cm;
     display: flex;
     flex-direction: column;
-    min-height: 80vh;    
+    height: 80vh ;
+    
 }
-
 main {
     min-height: 70vh;
-}
-  
-
-.container_main {
-    align-items: center;
-    justify-content: center;
-}
-  
-.container_main>h1{
-    margin-top: 20px;
-    text-align: center;
-    display:block;
-}
-
-.container .container_main .eveniment{
-    display : flex;
-    margin : 20px; 
-}
-
-.eveniment>img{
-    width:350px;
-}
-
-.descriere_even_1{
-    padding: 20px;
-    margin-left: 30px;    
-    background-color: #605B3E;
-    background-size: cover;
-    background-position: center;
-    color:#FFFF;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.descriere_even_1>h4{
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.descriere_even_1>h1{
-    margin: 0;
-    text-align: center;
-}.container_main>h2{
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-.descriere_even_1>p{
-    margin: 0;
-    text-align: center;
-}
-#delimitare{
-    font-size: 50px;
-    margin: 0;
-    margin-bottom: -10px;
-    margin-top: -10px ;
 }
 
 /* Footer Styles */
@@ -90,12 +35,11 @@ footer{
     text-align: left;
     padding-bottom: 1cm;
 }
-/* Menu Bar Styles */
 
+/* Menu Bar Styles */
 .site-logo {
     margin-right: 50px;
 }
-
 .cart-icon{
     margin-right: 50px;
     margin-left: 350px;
@@ -120,7 +64,6 @@ nav>ul{
     display: flex;
     background-color: #E2D7B7;
 }
-
 .navigare>li{
     margin-top: 20px;
     margin-left: 50px;
