@@ -33,9 +33,9 @@
         
         <main> 
             <div class = "container_main">
-                <h4>Cos de cumparaturi</h4>
                 <div class = "form_table_container">
                     <div class = "tabel">
+                        <h4>Cos de cumparaturi</h4>
                         <table class = "shopping_table">
                             <tbody>
                                 <tr>
@@ -61,19 +61,40 @@
                                     </tr>
                             </tbody>
                         </table>
+                        <div class = "total">
+                            <h4>Total:</h4>
+                            <p><FONT COLOR = "#605B3E">39lei</FONT></p>
+                        </div>
                     </div>
                     <div class = "formular_plata">
                         <h2><FONT COLOR = "white">Detalii Card</FONT></h2>
                         <h4><FONT COLOR = "white">Tip card</FONT></h4>
-                        <form>
-        
+                        <div class = "tipuri_card">
+                            <img src = "imagini/Visa-Logo.png" alt = "visa_logo" width="70" height="60">
+                            <img src = "imagini/MasterCard_Logo.png" alt = "master_logo" width="70" height="60">
+                            <img src = "imagini/rupay-logo.png" alt ="rupay_logo" width="70" height="60">
+                        </div>
+                        <form class = "formular">
+                            <label for="nume">Nume Card:</label><br>
+                            <input type="text" id="nume" nume="nume" value="Nume"><br>
+                            <label for="nr_card">Numar Card:</label><br>
+                            <input type="text" id="nr_card" name="nr_card" value="1111 2222 3333 4444">
+                            <div class = "alte_date">
+                                <label for = "data_expirare">Data Expirare</label>
+                                <label for = "cvv">CVV</label>
+                            </div>
+                            <div class = "alte_date_input">
+                                <input type = "month/year" id = "data_expirare" name = "data_expirare" value = "12/23">
+                                <input type = "number" id = "cvv" name = "cvv">
+                            </div>
+                            <div class = "suma">
+                                <p><FONT COLOR = "#605B3E">TOTAL:</FONT></p>
+                                <p><FONT COLOR = "#605B3E">39lei</FONT></p>
+                            </div>
+                            <input class = "submit_button" type = "submit" value = "PLATESTE">
                         </form>
                     </div>
             </div>
-                <div class = "total">
-                    <h4>Total:</h4>
-                    <p><FONT COLOR = "#605B3E">54lei</FONT></p>
-                </div>
             </div>
         </main>
     </div>
