@@ -40,10 +40,11 @@ main {
 
 .tabel>h4{
     padding-top: 50px;
-    color: black;
     font-weight: bold;
 }
-
+.formular-plata{
+    color: #fff;
+}
 /* Footer Styles */
 footer{
     background-color: rgb(102 102 102);
@@ -170,6 +171,7 @@ td:last-child{
 
 .total>h4{
     display: inline-block;
+    color: black;
     
 }
 
@@ -177,7 +179,7 @@ td:last-child{
     color: #605B3E;
     font-weight: bold;
     display: inline-block;
-    margin-left: 500px;
+    margin-left: 65%;
 }
 
 .tabel{
@@ -190,10 +192,10 @@ td:last-child{
     border-radius: 10px;
     width: 35%;
     padding-bottom: 5%;
-}
-.formular-plata>h2, h4{
     color: #fff;
 }
+
+
 .tipuri-card{
     display: flex;
     justify-content: space-around;
@@ -216,7 +218,9 @@ td:last-child{
     margin-right: 35px;
     margin-bottom: 20%;
 }
-
+.formular>input{
+    color: #393939;
+}
 .alte-date>label{
     color: #ffff
 }
@@ -251,3 +255,127 @@ form>input{
 .suma>p{
     color:#605B3E;
 }
+@media (max-width: 1020px) {
+    body{
+    height: 100vh;
+    margin: 0;
+    background-image: url('../imagini/background-photo.jpg');
+    background-size: 165%;
+    background-position: center;
+}
+.container{
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1cm;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh ;
+    height: auto;
+    
+}
+main {
+    min-height: 70vh;
+    height: auto;
+}/* Menu Bar Styles */
+
+nav{
+    height: 10vh;
+    border-bottom: #605B3E;
+    position: relative;
+    background-color: #E2D7B7;
+}
+nav>ul{
+    padding-left: 1px;
+    height: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 100%;
+    background-color: #E2D7B7;
+}
+.site-logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    grid-column: 1/2;
+}
+.site-logo>img {
+    max-width: 5vh;
+    max-height: 5vh;
+    margin-right: 50px;
+}
+.cart-icon{
+    grid-column: 3/4;
+    margin:0;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 20%;
+}
+.navigare{
+    border: 2px solid #605B3E;
+    border-left: none;
+    border-right: none;
+    grid-column: 2/2;
+    display: grid;
+    grid-template-columns: 70% 10% 10% 10%;
+
+}
+.nav1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav1>li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 7%;
+}
+li>a{
+    color:#FFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: small;
+}
+
+ /*MAIN*/
+.container_main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-table-container{
+    display: flex;
+    width: 100%;
+    padding-top:30px ;
+    flex-direction: column;
+}
+.tabel{
+    width: 100%;   
+}
+
+.formular-plata{
+    border: 2px solid #E2D7B7;
+    background-color: #E2D7B7;
+    border-radius: 10px;
+    width: 80%;
+    padding-bottom: 5%;
+    align-self: center;
+}
+.total>h4{
+    display: inline-block; 
+    color: black; 
+
+}
+
+.total>p{
+    color: #605B3E;
+    font-weight: bold;
+    margin-left: 72%;
+}
+  }
