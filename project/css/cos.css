@@ -96,6 +96,10 @@ li>a{
 
 .nume-produs{
     font-weight: bold;
+    color: #AA965B;
+}
+.nume-produs>p{
+    color: #938E8E
 }
 
 td>input{
@@ -176,9 +180,10 @@ td:last-child{
     border-radius: 10px;
     width: 35%;
     padding-bottom: 5%;
-  
 }
-
+.formular-plata>h2, h4{
+    color: #fff;
+}
 .tipuri-card{
     display: flex;
     justify-content: space-around;
@@ -232,4 +237,7 @@ form>input{
     justify-content: space-around;
     align-items: start ;
     padding-right: 10%;
+}
+.suma>p{
+    color:#605B3E;
 }
