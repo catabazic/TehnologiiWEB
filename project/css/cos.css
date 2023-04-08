@@ -6,11 +6,12 @@ body{
     background-size: 120%;
     background-position: center;
 }
-/*Container Styles */
+
+/* Container Styles */
 .container{
     position: relative;
     z-index: 1;
-    background-color: #ffffff;
+    background-color: #fff;
     background-size: cover;
     background-position: center;
     margin-top: 20vh;
@@ -20,27 +21,32 @@ body{
     display: flex;
     flex-direction: column;   
 }
-.container_main {
+
+.container-main {
     display: flex;
     flex-direction: column;
 }
-.form_table_container{
+
+.form-table-container{
     display: flex;
     width: 100%;
     padding-top:50px ;
     justify-content: space-evenly;
 }
+
 main {
     min-height: 70vh;
 }
+
 .tabel>h4{
     padding-top: 50px;
     color: black;
     font-weight: bold;
 }
+
 /* Footer Styles */
 footer{
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(102 102 102);
     background-size: cover;
     padding: 20px;
     text-align: left;
@@ -51,18 +57,18 @@ footer{
 .site-logo {
     margin-right: 50px;
 }
+
 .cart-icon{
-    margin-right: 50px;
-    margin-left: 350px;
-    margin-top: 20px;
-    margin-bottom: 0.3%;
+    margin: 20px 50px 0.3% 350px;
 }
+
 .navigare{
     border: 2px solid #605B3E;
     border-left: none;
     border-right: none;
     display: flex;
 }
+
 nav{
     height: 10vh;
     border-bottom: #605B3E;
@@ -75,49 +81,58 @@ nav>ul{
     display: flex;
     background-color: #E2D7B7;
 }
+
 .navigare>li{
     margin-top: 20px;
     margin-left: 50px;
     margin-bottom: 20px;
 }
+
 li>a{
     color:#FFFF;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
 }
 
-.nume_produs{
+.nume-produs{
     font-weight: bold;
 }
+
 td>input{
     border: none;
     color: #393939;
+    width: 50px;
 }
+
 td>button{
     border: none;
     background-color: #ffff;
 }
+
 td>button>img{
     color: #ffff;
 }
-table.shopping_table {
 
+table.shopping-table {
     border-collapse: separate;
     border-spacing: 0 8px;
     table-layout: auto;
     display: inline-block;
 }
+
 tr{
     border: 2px solid gray;
     border-radius: 10px;
     width: 300px;
 }
+
 td {
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
     box-shadow:#393939;
     padding: 5px;
 }
+
 td:first-child{
     border-left:  2px solid gray;
     border-top-left-radius: inherit;
@@ -129,31 +144,33 @@ td:last-child{
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
 }
-.imagine_produs{
+
+.imagine-produs{
     padding-left: 10px;
     width: 70px;
 }
+
 .pret{
     width: 30px;
 }
 
-td>input{
-    width: 50px;
-}
 .total>h4{
     display: inline-block;
     
 }
+
 .total>p{
     color: #605B3E;
     font-weight: bold;
     display: inline-block;
     margin-left: 500px;
 }
+
 .tabel{
     width: 60%;   
 }
-.formular_plata{
+
+.formular-plata{
     border: 2px solid #E2D7B7;
     background-color: #E2D7B7;
     border-radius: 10px;
@@ -161,7 +178,8 @@ td>input{
     padding-bottom: 5%;
   
 }
-.tipuri_card{
+
+.tipuri-card{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -177,18 +195,21 @@ td>input{
     color: #ffff
 }
 
-.alte_date_input{
+.alte-date-input{
     display: flex;
     justify-content: space-between;
     margin-right: 35px;
     margin-bottom: 20%;
 }
-.alte_date>label:first-child{
-    margin-right: 27%;
-}
-.alte_date>label{
+
+.alte-date>label{
     color: #ffff
 }
+
+.alte-date>label:first-child{
+    margin-right: 27%;
+}
+
 form>input{
     border: none;
     background-color: #AA965B;
@@ -196,7 +217,8 @@ form>input{
     height: 35px;
     border-radius: 10px;
 }
-.alte_date_input>input{
+
+.alte-date-input>input{
     border: none;
     background-color: #AA965B;
     height: 35px;
