@@ -10,13 +10,12 @@ body{
 .container{
     position: relative;
     z-index: 1;
-    background-color: #e2d7b7;
+    background-color: #E2D7B7;
     background-size: cover;
     background-position: center;
     margin-top: 15vh;
     margin-left: 30px;
     margin-right: 30px;
-    /*padding-bottom: 1cm;*/
     padding-bottom: 1cm;
     display: flex;
     flex-direction: column;
@@ -53,7 +52,9 @@ p{
     grid-column: 2/2;
 }
   
-
+.items > div {
+    max-width: 70ch;
+}
 /* Footer Styles */
 footer{
     background-color: rgb(102, 102, 102);

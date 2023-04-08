@@ -1,10 +1,4 @@
-@media (min-width: 1020px) {
-    .items {
-        margin-right: 10%;
-    }
-}
-
-@media (max-width: 1020px) {
+@media ( max-width: 800px) {
     body{
     height: 100vh;
     margin: 0;
@@ -21,17 +15,22 @@
     margin-top: 10vh;
     margin-left: 0;
     margin-right: 0;
-    padding-bottom: 1cm;
     display: flex;
     flex-direction: column;
     min-height: 90vh ;
-    height: auto;
-    
 }
 main {
-    min-height: 70vh;
+    min-height: 80vh;
     height: auto;
-}/* Menu Bar Styles */
+}
+footer{
+    background-color: rgb(102, 102, 102);
+    background-size: cover;
+    padding: 20px;
+    text-align: left;
+    padding-bottom: 1cm;
+}
+/* Menu Bar Styles */
 
 nav{
     height: 10vh;
@@ -91,41 +90,66 @@ li>a{
     font-size: small;
 }
 
- /*MAIN*/
+ 
+}
+
+@media (max-width: 680px){
+    
 .container_main {
-    height: 100%;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 1fr;
-    padding-top: 30px;
-}
-.image{
-    display: flex;
-    justify-content: center;
     align-items: center;
-}  
-
-.image>img {
-    max-width: 90%;
-    max-height: 90%;
-    grid-row: 1/2;
-}
-
-p{
-    line-height: 0.9;
+    justify-content: center;
 }
   
-.text {
-    font-size: 30px;
-    padding-left: 25px;
-    line-height: 0.7;;
-    grid-row: 2/2;
-    grid-column: 1/1;
+.container_main>h1{
+    margin-top: 20px;
+    text-align: center;
+    display:block;
 }
-.meniu-container {
-    display: flex;
+
+.container .container_main .eveniment{
+    display : flex;
+    margin : 20px; 
     flex-wrap: wrap;
+    justify-content: center;
 }
 
+.eveniment>img{
+    max-width:100%;
+    margin-bottom: 5%;
+}
 
-  }
+.descriere_even_1{
+    padding: 20px;
+    margin-left: 0;    
+    background-color: #605B3E;
+    background-size: cover;
+    background-position: center;
+    color:#FFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.descriere_even_1>h4{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.descriere_even_1>h1{
+    margin: 0;
+    text-align: center;
+}.container_main>h2{
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.descriere_even_1>p{
+    margin: 0;
+    text-align: center;
+}
+#delimitare{
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: -10px;
+    margin-top: -10px ;
+}
+}
