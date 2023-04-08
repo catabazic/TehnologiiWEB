@@ -42,35 +42,35 @@
                             <tbody>
                                 <tr>
                                     <td class = "imagine-produs"><img src = "imagini/cappucino.jpg" alt = "cappucino" width = "50" height="50"></td>
-                                    <td class = "nume-produs"><FONT COLOR = "#AA965B">Cappucino<p><FONT COLOR ="#938E8E">Espresso + 150 ml cremă lapte</FONT></p></FONT></td>
+                                    <td class = "nume-produs">Cappucino<p>Espresso + 150 ml cremă lapte</p></td>
                                     <td class = "cantitate"><input type="number" value="1"></td>
-                                    <td class = "pret"><FONT COLOR = "#605B3E">9lei</FONT></td>
+                                    <td class = "pret">9lei</td>
                                     <td><button class="remove"><img src = "imagini/trashcan.png" alt = "trashcan" width="30" height="30"></button></td>
                                 </tr>
                                 <tr>
                                     <td class = "imagine-produs"><img src = "imagini/summer_tea.jpg" alt = "summer_tea" width = "50" height="50"></td>
-                                    <td class = "nume-produs"><FONT COLOR = "#AA965B">Summer Passion<p><FONT COLOR ="#938E8E">Ceai verde, mango, ananas, muguri de trandafir 350 ml</FONT></p></FONT></td>
+                                    <td class = "nume-produs">Summer Passion<p>Ceai verde, mango, ananas, muguri de trandafir 350 ml</p></td>
                                     <td class = "cantitate"><input type="number" value="1"></td>
-                                    <td class = "pret"><FONT COLOR = "#605B3E">15lei</FONT></td>
+                                    <td class = "pret">15lei</td>
                                     <td><button class="remove"><img src = "imagini/trashcan.png" alt = "trashcan" width="30" height="30"></button></td>
                                 </tr>
                                 <tr>
                                         <td class = "imagine-produs"><img src = "imagini/apple_tea.jpg" alt = "apple_tea" width = "50" height="50"></td>
-                                        <td class = "nume-produs"><FONT COLOR = "#AA965B">Sweet Apple<p><FONT COLOR ="#938E8E">bucăți de mere, scorțișoară, măceșe 350 ml</FONT></p></FONT></td>
+                                        <td class = "nume-produs">Sweet Apple<p>bucăți de mere, scorțișoară, măceșe 350 ml</p></td>
                                         <td class = "cantitate"><input type="number" value="1"></td>
-                                        <td class = "pret"><FONT COLOR = "#605B3E">15lei</FONT></td>
+                                        <td class = "pret">15lei</td>
                                         <td><button class="remove"><img src = "imagini/trashcan.png" alt = "trashcan" width="30" height="30"></button></td>
                                     </tr>
                             </tbody>
                         </table>
                         <div class = "total">
                             <h4>Total:</h4>
-                            <p><FONT COLOR = "#605B3E">39lei</FONT></p>
+                            <p>39lei</p>
                         </div>
                     </div>
                     <div class = "formular-plata">
-                        <h2><FONT COLOR = "white">Detalii Card</FONT></h2>
-                        <h4><FONT COLOR = "white">Tip card</FONT></h4>
+                        <h2>Detalii Card</h2>
+                        <h4>Tip card</h4>
                         <div class = "tipuri-card">
                             <img src = "imagini/Visa-Logo.png" alt = "visa_logo" width="70" height="60">
                             <img src = "imagini/MasterCard_Logo.png" alt = "master_logo" width="70" height="60">
@@ -86,12 +86,12 @@
                                 <label for = "cvv">CVV</label>
                             </div>
                             <div class = "alte-date-input">
-                                <input type = "month/year" id = "data-expirare" name = "data-expirare" value = "12/23">
-                                <input type = "number" id = "cvv" name = "cvv">
+                                <input type="text" id="data-expirare" name="data-expirare" pattern="\d{2}/\d{4}" placeholder="MM/YYYY" required>
+                                <input type = "text" id = "cvv" name = "cvv">
                             </div>
                             <div class = "suma">
-                                <p><FONT COLOR = "#605B3E">TOTAL:</FONT></p>
-                                <p><FONT COLOR = "#605B3E">39lei</FONT></p>
+                                <p>TOTAL:</p>
+                                <p>39lei</p>
                             </div>
                             <input class = "submit-button" type = "submit" value = "PLATESTE">
                         </form>
