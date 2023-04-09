@@ -19,7 +19,7 @@ body{
     padding-bottom: 1cm;
     display: flex;
     flex-direction: column;
-    height: 85vh ;
+    min-height: 85vh ;
     
 }
 main {
@@ -32,6 +32,11 @@ main {
     display: grid;
     grid-template-columns: 50% 50%;
     padding-top: 30px;
+}
+.image {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .image>img {
@@ -52,9 +57,6 @@ p{
     grid-column: 2/2;
 }
   
-.items > div {
-    max-width: 70ch;
-}
 
 
 
