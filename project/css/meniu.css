@@ -134,6 +134,9 @@ img{
     margin-right: 20px;
 }
 
+.nav1 li:nth-child(2) a {
+    color: #605B3E;
+}
 
 /* Footer Styles */
 footer{
@@ -142,6 +145,14 @@ footer{
     padding: 20px;
     text-align: left;
     padding-bottom: 1cm;
+}
+
+footer>h3{
+    color:black;
+}
+
+footer>p{
+    color:black;
 }
 
 /* Menu Bar Styles */

@@ -67,6 +67,15 @@ footer{
     text-align: left;
     padding-bottom: 1cm;
 }
+
+footer>h3{
+    color:black;
+}
+
+footer>p{
+    color:black;
+}
+
 /* Menu Bar Styles */
 
 nav{
@@ -89,6 +98,9 @@ nav>ul{
     justify-items: center;
     align-items: center;
     grid-column: 1/2;
+}
+.nav1 li:nth-child(2) a {
+    color: #605B3E;
 }
 .site-logo>img {
     max-width: 5vh;

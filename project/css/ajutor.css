@@ -65,11 +65,24 @@ footer{
     padding-bottom: 1cm;
 }
 
+footer>h3{
+  color:black;
+}
+
+footer>p{
+  color:black;
+}
+
 /* Menu Bar Styles */
 .site-logo {
   margin-right: 50px;
   grid-column: 1/2;
 }
+
+.nav1 li:nth-child(5) a {
+  color: #605B3E;
+}
+
 .cart-icon{
   grid-column: 4/4;
   margin-right: 50px;

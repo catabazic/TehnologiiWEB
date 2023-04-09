@@ -48,6 +48,9 @@ nav>ul{
     align-items: center;
     grid-column: 1/2;
 }
+.nav1 li:first-child a {
+    color: #605B3E;
+}
 .site-logo>img {
     max-width: 5vh;
     max-height: 5vh;

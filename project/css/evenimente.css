@@ -30,14 +30,9 @@ h2{
     color: #605B3E;
 }
 
-h3{
-    color: #AA965B;
+.nav1 li:nth-child(3) a {
+    color: #605B3E;
 }
-
-p{
-    color: #938E8E;
-}
-  
 
 .container_main {
     align-items: center;
@@ -102,6 +97,15 @@ footer{
     text-align: left;
     padding-bottom: 1cm;
 }
+
+footer>h3{
+    color:black;
+}
+
+footer>p{
+    color:black;
+}
+
 /* Menu Bar Styles */
 .site-logo {
     margin-right: 50px;
