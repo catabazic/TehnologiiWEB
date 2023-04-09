@@ -28,7 +28,11 @@ main {
 
 h2{
     color: #605B3E;
-} 
+}
+
+.nav1 li:nth-child(3) a {
+    color: #605B3E;
+}
 
 .container_main {
     align-items: center;

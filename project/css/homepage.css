@@ -56,9 +56,10 @@ p{
     line-height: 0.7;;
     grid-column: 2/2;
 }
-  
 
-
+.nav1 li:first-child a {
+    color: #605B3E;
+}
 
 /* Footer Styles */
 footer{

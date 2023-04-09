@@ -55,6 +55,10 @@ footer>p{
     grid-column: 1/2;
 }
 
+.nav1 li:nth-child(6) a {
+    color: #605B3E;
+}
+
 .cart-icon{
     grid-column: 4/4;
     margin-right: 50px;
