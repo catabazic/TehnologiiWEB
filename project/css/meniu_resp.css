@@ -25,17 +25,17 @@
 .items > div>div {
     max-width: 70vw;
 }
-.items_right {
+.items-right {
     margin-left: 5%;
     margin-right: 5%;
     max-width: 100vw;
-}.items_right > div {
+}.items-right > div {
     max-width: 90vw;
 }
-.items_right > div>div {
+.items-right > div>div {
     max-width: 70vw;
 }
-.price_and_add_to_cart {
+.price-and-add-to-cart {
     display: flex;
     justify-content: flex-end;
 }

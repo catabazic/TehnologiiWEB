@@ -50,7 +50,9 @@ nav>ul{
     grid-template-rows: 100%;
     background-color: #E2D7B7;
 }
+
 .site-logo{
+    margin: 0;
     display: flex;
     justify-items: center;
     align-items: center;
