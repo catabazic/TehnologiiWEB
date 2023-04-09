@@ -359,9 +359,7 @@ nav>ul{
     grid-column: 1/2;
     justify-content: center;
 }
-.nav1 li:nth-child(2) a {
-    color: #605B3E;
-}
+
 .site-logo>img {
     max-width: 5vh;
     max-height: 5vh;
