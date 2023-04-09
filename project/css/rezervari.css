@@ -58,6 +58,10 @@ footer>p{
     justify-content: center;
 }
 
+.navigare li:nth-child(6) a {
+    color: #605B3E;
+}
+
 .cart-icon {
     grid-column: 3/4;
     /* margin-right: 50px; */

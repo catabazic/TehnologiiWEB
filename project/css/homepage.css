@@ -57,8 +57,9 @@ p{
     line-height: 0.7;;
     grid-column: 2/2;
 }
-.text h1:first-child {
-    color: #9fa081
+
+.navigare ul li:nth-child(1) a {
+    color: #605B3E;
 }
 
 .text .tea{

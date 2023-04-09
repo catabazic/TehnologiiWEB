@@ -74,6 +74,9 @@ nav {
     justify-content: center;
     margin: 0;
 }
+.navigare li:nth-child(3) a {
+    color: #605B3E;
+}
 li>a{
     color:#FFFF;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

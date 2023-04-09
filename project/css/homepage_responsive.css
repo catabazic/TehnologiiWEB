@@ -35,8 +35,8 @@ main {
 }/* Menu Bar Styles */
 
 
-.text h1:first-child {
-    color: #9fa081
+.navigare ul li:nth-child(1) a {
+    color: #605B3E;
 }
 
 .text .tea{

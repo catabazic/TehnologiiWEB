@@ -89,6 +89,10 @@ footer>p{
     justify-content: center;
 }
 
+.navigare li:nth-child(5) a {
+  color: #605B3E;
+}
+
 .cart-icon {
     grid-column: 3/4;
     /* margin-right: 50px; */
@@ -228,7 +232,9 @@ nav>ul{
   grid-column: 1/2;
   justify-content: center;
 }
-
+.navigare li:nth-child(5) a {
+    color: #605B3E;
+}
 .site-logo>img {
     max-width: 5vh;
     max-height: 5vh;
