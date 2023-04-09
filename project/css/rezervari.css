@@ -7,6 +7,7 @@ body{
     background-position: center;
 }
 
+
 /* Container Styles */
 .container{
     position: relative;
@@ -172,7 +173,7 @@ label{
         height: auto;
     }
     main {
-        min-height: 70vh;
+        min-height: 80vh;
         height: auto;
     }
     nav{
@@ -190,16 +191,18 @@ label{
         grid-template-rows: 100%;
         background-color: #E2D7B7;
     }
-    .site-logo{
+    .site-logo {
+        margin: 0;
         display: flex;
         justify-items: center;
         align-items: center;
         grid-column: 1/2;
+        justify-content: center;
     }
     .site-logo>img {
         max-width: 5vh;
         max-height: 5vh;
-        margin-right: 50px;
+        margin-right: 0;
     }
     .cart-icon{
         grid-column: 3/4;
@@ -241,4 +244,10 @@ label{
         color: #605B3E;
     }
     
+}
+
+@media(max-width: 1020px){
+    .cart-icon{
+        margin-top: 5%;
+    }
 }
