@@ -190,39 +190,6 @@ details summary {
     background-color:#E2D7B7;
     color: #605B3E;
   }
-<<<<<<< HEAD
-
-  @media (width <= 1020px) {
-    body{
-    height: 100vh;
-    margin: 0;
-    background-image: url('../imagini/background-photo.jpg');
-    background-size: 165%;
-    background-position: center;
-}
-
-.container{
-    position: relative;
-    z-index: 1;
-    background-color:#E2D7B7;
-    background-size: cover;
-    background-position: center;
-    margin-top: 10vh;
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 1cm;
-    display: flex;
-    flex-direction: column;
-    min-height: 90vh ;
-    height: auto;
-}
-
-main {
-    min-height: 70vh;
-    height: auto;
-}/* Menu Bar Styles */
-=======
->>>>>>> c9800587bf15c3249750014a6ba87b0834b177e6
 
 @media (max-width: 1020px) {
     
@@ -245,14 +212,6 @@ nav>ul{
     grid-template-rows: 100%;
     background-color: #E2D7B7;
 }
-<<<<<<< HEAD
-
-.site-logo{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    grid-column: 1/2;
-=======
 .site-logo {
   margin: 0;
   display: flex;
@@ -260,28 +219,16 @@ nav>ul{
   align-items: center;
   grid-column: 1/2;
   justify-content: center;
->>>>>>> c9800587bf15c3249750014a6ba87b0834b177e6
 }
 
 .site-logo>img {
     max-width: 5vh;
     max-height: 5vh;
-<<<<<<< HEAD
-    margin-right: 50px;
-}
-
-=======
     margin-right: 0;
 }*/
->>>>>>> c9800587bf15c3249750014a6ba87b0834b177e6
 .cart-icon{
     margin-top: 5%;
 }
-<<<<<<< HEAD
-
-=======
-/*
->>>>>>> c9800587bf15c3249750014a6ba87b0834b177e6
 .navigare{
     border: 2px solid #605B3E;
     border-left: none;
@@ -308,18 +255,8 @@ li>a{
     text-decoration: none;
     font-size: small;
 }
-<<<<<<< HEAD
-
- /* MAIN */
-.container-main {
-=======
 */
  /*MAIN*/
-.container_main {
->>>>>>> c9800587bf15c3249750014a6ba87b0834b177e6
-    height: 100%;
-    padding-top: 30px;
-}
 
 .container-main>h2{
   padding-bottom: 30px;
@@ -396,10 +333,6 @@ details p {
   height: 30%;
 
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c9800587bf15c3249750014a6ba87b0834b177e6
 }
 
 @media(max-width: 850px){

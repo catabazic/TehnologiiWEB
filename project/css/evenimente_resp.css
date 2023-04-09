@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-@media ( width <= 800px) {
-=======
+
 @media(max-width: 1020px){
     .cart-icon{
         margin-top: 5%;
     }
 }
 @media ( max-width: 850px) {
->>>>>>> c9800587bf15c3249750014a6ba87b0834b177e6
     body{
     height: 100vh;
     margin: 0;
@@ -68,13 +65,8 @@ nav>ul{
     grid-template-rows: 100%;
     background-color: #E2D7B7;
 }
-<<<<<<< HEAD
-
-.site-logo{
-=======
 .site-logo {
     margin: 0;
->>>>>>> c9800587bf15c3249750014a6ba87b0834b177e6
     display: flex;
     justify-items: center;
     align-items: center;
