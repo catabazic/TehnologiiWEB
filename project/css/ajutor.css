@@ -229,6 +229,7 @@ nav>ul{
 .cart-icon{
     margin-top: 5%;
 }
+/*
 .navigare{
     border: 2px solid #605B3E;
     border-left: none;
@@ -257,6 +258,11 @@ li>a{
 }
 */
  /*MAIN*/
+
+ .container_main {
+  height: 100%;
+  padding-top: 30px;
+}
 
 .container-main>h2{
   padding-bottom: 30px;
