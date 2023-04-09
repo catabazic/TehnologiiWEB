@@ -98,7 +98,7 @@ nav>ul{
 .cart-icon{
     grid-column: 3/4;
     margin:0;
-    margin-top: 20px;
+    margin-top: 10%;
     margin-right: 50px;
     margin-left: 20%;
 }
@@ -108,16 +108,15 @@ nav>ul{
     border-right: none;
     grid-column: 2/2;
     display: grid;
-    grid-template-columns: 70% 10% 10% 10%;
-
+    grid-template-columns: 80% 5% 10% 5%;
 }
 .nav1{
     display: flex;
     flex-wrap: wrap;
 }
-.nav1>li{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.nav1>li {
+    margin-top: 2%;
+    margin-bottom: 2%;
     padding-left: 7%;
 }
 li>a{
