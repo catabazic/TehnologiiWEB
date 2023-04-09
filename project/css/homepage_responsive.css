@@ -1,4 +1,9 @@
-@media (width <=850px) {
+@media(max-width: 1020px){
+    .cart-icon{
+        margin-top: 5%;
+    }
+}
+@media (max-width: 850px) {
     body{
     height: 100vh;
     margin: 0;
@@ -47,10 +52,12 @@ nav>ul{
 }
 
 .site-logo{
+    margin: 0;
     display: flex;
     justify-items: center;
     align-items: center;
     grid-column: 1/2;
+    justify-content: center;
 }
 
 li>a{
@@ -87,7 +94,7 @@ li>a{
 .site-logo>img {
     max-width: 5vh;
     max-height: 5vh;
-    margin-right: 50px;
+    margin-right: 0;
 }
 
 .cart-icon{
