@@ -204,10 +204,20 @@ li>a{
    }
 
    #delim{
-       font-size: 50px;
-       margin: 0;
-       margin-bottom: 10px;
-   }
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 10px;
+    }
+    #delim1{
+        font-size: 50px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #delim2{
+        font-size: 50px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
 
    .container-main>h2{
        grid-row:2/3;
@@ -325,6 +335,16 @@ li>a{
     }
 
     #delim{
+        font-size: 50px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #delim1{
+        font-size: 50px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #delim2{
         font-size: 50px;
         margin: 0;
         margin-bottom: 10px;
