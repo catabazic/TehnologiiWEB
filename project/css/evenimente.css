@@ -25,6 +25,18 @@ body{
 main {
     min-height: 75vh;
 }
+
+h2{
+    color: #605B3E;
+}
+
+h3{
+    color: #AA965B;
+}
+
+p{
+    color: #938E8E;
+}
   
 
 .container_main {
