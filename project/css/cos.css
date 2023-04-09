@@ -154,7 +154,6 @@ tr{
 td {
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
-    box-shadow:#393939;
     padding: 5px;
 }
 
@@ -203,7 +202,7 @@ td:last-child{
     border-radius: 10px;
     width: 35%;
     padding-bottom: 5%;
-    color: #fff;
+    color: #fff;    
 }
 
 
