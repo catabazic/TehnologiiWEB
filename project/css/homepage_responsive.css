@@ -11,6 +11,7 @@
     background-size: 165%;
     background-position: center;
 }
+
 .container{
     position: relative;
     z-index: 1;
@@ -27,6 +28,7 @@
     height: auto;
     
 }
+
 main {
     min-height: 70vh;
     height: auto;
@@ -38,6 +40,7 @@ nav{
     position: relative;
     background-color: #E2D7B7;
 }
+
 nav>ul{
     padding-left: 1px;
     height: 100%;
@@ -47,22 +50,52 @@ nav>ul{
     grid-template-rows: 100%;
     background-color: #E2D7B7;
 }
-.site-logo {
-    margin: 0;
+.site-logo{
     display: flex;
     justify-items: center;
     align-items: center;
     grid-column: 1/2;
     justify-content: center;
+    margin: 0;
 }
+
+li>a{
+    color:#FFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: small;
+}
+
 .nav1 li:first-child a {
     color: #605B3E;
 }
+
+.text h1:first-child {
+    color: #9fa081
+}
+
+.text .tea{
+    color: #aa965b;
+}
+
+.text .house{
+    color: #9fa081;
+}
+
+.text .quote{
+    color:#aa965b;
+}
+
+.text .author{
+    color:#9fa081;
+}
+
 .site-logo>img {
     max-width: 5vh;
     max-height: 5vh;
     margin-right: 0;
 }
+
 .cart-icon{
     grid-column: 3/4;
     margin:0;
@@ -70,6 +103,7 @@ nav>ul{
     margin-right: 50px;
     margin-left: 20%;
 }
+
 .navigare{
     border: 2px solid #605B3E;
     border-left: none;
@@ -78,30 +112,27 @@ nav>ul{
     display: grid;
     grid-template-columns: 80% 5% 10% 5%;
 }
+
 .nav1{
     display: flex;
     flex-wrap: wrap;
 }
+
 .nav1>li {
     margin-top: 2%;
     margin-bottom: 2%;
     padding-left: 7%;
 }
-li>a{
-    color:#FFFF;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    font-size: small;
-}
 
- /*MAIN*/
-.container_main {
+ /* MAIN */
+.container-main {
     height: 100%;
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 1fr;
     padding-top: 30px;
 }
+
 .image{
     display: flex;
     justify-content: center;
