@@ -58,6 +58,7 @@ nav>ul{
     align-items: center;
     grid-column: 1/2;
     justify-content: center;
+    margin: 0;
 }
 
 li>a{
