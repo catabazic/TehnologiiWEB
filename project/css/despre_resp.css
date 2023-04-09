@@ -206,7 +206,7 @@ li>a{
    #delim{
        font-size: 50px;
        margin: 0;
-       margin-bottom: -10px;
+       margin-bottom: 10px;
    }
 
    .container-main>h2{
@@ -327,7 +327,7 @@ li>a{
     #delim{
         font-size: 50px;
         margin: 0;
-        margin-bottom: -10px;
+        margin-bottom: 10px;
     }
 
     .container-main>h2{
