@@ -28,16 +28,7 @@ main {
 
 h2{
     color: #605B3E;
-}
-
-h3{
-    color: #AA965B;
-}
-
-p{
-    color: #938E8E;
-}
-  
+} 
 
 .container_main {
     align-items: center;
@@ -102,6 +93,15 @@ footer{
     text-align: left;
     padding-bottom: 1cm;
 }
+
+footer>h3{
+    color:black;
+}
+
+footer>p{
+    color:black;
+}
+
 /* Menu Bar Styles */
 .site-logo {
     margin-right: 50px;

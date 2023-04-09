@@ -55,6 +55,9 @@ p{
 .items > div {
     max-width: 70ch;
 }
+
+
+
 /* Footer Styles */
 footer{
     background-color: rgb(102, 102, 102);
@@ -62,6 +65,14 @@ footer{
     padding: 20px;
     text-align: left;
     padding-bottom: 1cm;
+}
+
+footer>h3{
+    color:black;
+}
+
+footer>p{
+    color:black;
 }
 
 /* Menu Bar Styles */

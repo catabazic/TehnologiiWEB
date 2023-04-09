@@ -30,6 +30,15 @@ footer{
     text-align: left;
     padding-bottom: 1cm;
 }
+
+footer>h3{
+    color:black;
+}
+
+footer>p{
+    color:black;
+}
+
 /* Menu Bar Styles */
 
 nav{

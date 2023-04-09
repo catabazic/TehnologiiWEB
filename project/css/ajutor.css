@@ -64,6 +64,14 @@ footer{
     padding-bottom: 1cm;
 }
 
+footer>h3{
+  color:black;
+}
+
+footer>p{
+  color:black;
+}
+
 /* Menu Bar Styles */
 .site-logo {
   margin-right: 50px;
