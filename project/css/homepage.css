@@ -61,6 +61,26 @@ p{
     color: #605B3E;
 }
 
+.text h1:first-child {
+    color: #9fa081
+}
+
+.text .tea{
+    color: #aa965b;
+}
+
+.text .house{
+    color: #9fa081;
+}
+
+.text .quote{
+    color:#aa965b;
+}
+
+.text .author{
+    color:#9fa081;
+}
+
 /* Footer Styles */
 footer{
     background-color: rgb(102, 102, 102);
