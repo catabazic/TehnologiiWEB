@@ -15,6 +15,7 @@ Comenzi:
 - Ora: time
 - ID Client: int
 - Valoarea totala: decimal
+- Status: varchar ("platit" sau "in proces")
 
 Comanda_produse:
 - id_comanda: int
