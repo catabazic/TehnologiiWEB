@@ -1,0 +1,21 @@
+Produse:
+- ID: int
+- Nume: varchar
+- Descriere: varchar
+- Pret: decimal
+- Cantitate in stoc: int
+
+Clienti:
+- ID: int
+- URL: varchar
+
+Comenzi:
+- ID: int
+- Data: date
+- Ora: time
+- ID Client: int
+- Valoarea totala: decimal
+
+Comanda_produse:
+- id_comanda: int
+- id_produs: int
