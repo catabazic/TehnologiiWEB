@@ -20,3 +20,8 @@ Comenzi:
 Comanda_produse:
 - id_comanda: int
 - id_produs: int
+
+Mese:
+- id: int
+- numar_locuri: int
+- ocupate: int
