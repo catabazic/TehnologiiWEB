@@ -1,3 +1,5 @@
+<?php include 'php/referer.php'; ?>
+
 <!DOCTYPE html>
 <html lang="ro">
 
@@ -19,12 +21,12 @@
         </div>
         <div class="navigare">
           <ul>
-            <li><a href="index.html">Acasă</a></li>
-            <li><a href="meniu.html">Meniu</a></li>
-            <li><a href="evenimente.html">Evenimente</a></li>
-            <li><a href="despre.html">Despre</a></li>
-            <li><a href="ajutor.html">Ajutor</a></li>
-            <li><a href="rezervari.html">Rezervări</a></li>
+            <li><a href="index.php">Acasă</a></li>
+            <li><a href="meniu.php">Meniu</a></li>
+            <li><a href="evenimente.php">Evenimente</a></li>
+            <li><a href="despre.php">Despre</a></li>
+            <li><a href="ajutor.php">Ajutor</a></li>
+            <li><a href="rezervari.php">Rezervări</a></li>
           </ul>
           <div class="cart-icon">
             <a href="cos.html"><i class="ri-shopping-cart-2-line" style="font-size: 1.5em;"></i></a>
