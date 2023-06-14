@@ -12,6 +12,6 @@ Tea H(TTP)ouse &lt;Bazic Catalina B3>&lt;Cojocarescu Bianca B2>&lt;Frij Alexandr
 - [ ] de a face functional cosul(cand adaugi in cos ceva sa iti apare scrisul, imaginea la ce ai adaugat)
 - [x] recunoasterea clientului [catalina]
 - [ ] chistia aia foarte ciudata cu url si adaugarea in meniu
-- [ ] ocuparea localului dinamic
+- [ ] ocuparea localului dinamic [catalina]
 - [ ] exceptii precum <403 Forbidden>
 
