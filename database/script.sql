@@ -10,7 +10,8 @@ CREATE TABLE Produse (
 -- Create table for Clienti
 CREATE TABLE Clienti (
     ID INT PRIMARY KEY,
-    URL VARCHAR(255)
+    referer VARCHAR(255),
+    cookie_id VARCHAR(20)
 );
 
 -- Create table for Comenzi
