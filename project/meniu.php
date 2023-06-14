@@ -539,7 +539,7 @@
                             <img class="desert" src="imagini/chocolate-cake.jpg" alt="Tort de ciocolată" width="60" height="60">
                             <div>
                               <div class="item">
-                                    <h3>Tort de ciocolatăe</h3>
+                                    <h3>Tort de ciocolată</h3>
                               </div>
                               <div class="price-and-add-to-cart">
                                   <div class="price">

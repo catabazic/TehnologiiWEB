@@ -132,7 +132,7 @@
                             </div>
                         </div>
                         <div class="Masa9">
-                            <h1>Masa 6 - 6 locuri</h1>
+                            <h1>Masa 8 - 6 locuri</h1>
                             <div class="locuri">
                             <label><input type="checkbox" name="locul1">Locul 1</label>
                             <br>
