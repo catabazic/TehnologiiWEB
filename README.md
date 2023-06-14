@@ -6,7 +6,7 @@ Tea H(TTP)ouse &lt;Bazic Catalina B3>&lt;Cojocarescu Bianca B2>&lt;Frij Alexandr
 
 ------------------------
 
-- [ ] adaugare in baza de date produse, etc
+- [ ] adaugare in baza de date produse, etc [stefania]
 - [ ] backend pentru a adauga in meniu
 - [ ] backend pentru a achita
 - [ ] de a face functional cosul(cand adaugi in cos ceva sa iti apare scrisul, imaginea la ce ai adaugat)
