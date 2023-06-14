@@ -1,9 +1,7 @@
 # TehnologiiWEB
-Tea H(TTP)ouse &lt;Bazic Catalina B3>&lt;Cojocarescu Bianca B2>&lt;Frij Alexandra B2>
 -----------------------
 
-## Compulsory (1p)
-
+Tea H(TTP)ouse &lt;Bazic Catalina B3>&lt;Cojocarescu Bianca B2>&lt;Frij Alexandra B2>
 ------------------------
 
 - [ ] adaugare in baza de date produse, etc [stefania]
