@@ -69,7 +69,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                  <a href="php/add_to_cart.php?name=Rooibos%20Delight"><button>+</button>
+                                  <a href="php/add_to_cart.php?name=Rooibos%20Delight"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -86,7 +86,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Cranberry%20Vanilla"><button>+</button>
+                                    <a href="php/add_to_cart.php?name=Cranberry%20Vanilla"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -103,7 +103,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Sweet%20Apple"><button>+</button>
+                                    <a href="php/add_to_cart.php?name=Sweet%20Apple"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -122,7 +122,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                   <a href="php/add_to_cart.php?name=Tropical%20Fruit"><button>+</button>
+                                   <a href="php/add_to_cart.php?name=Tropical%20Fruit"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -139,7 +139,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Summer%20Passion"><button>+</button>
+                                    <a href="php/add_to_cart.php?name=Summer%20Passion"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -156,7 +156,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Rooibos%20Delight"><button>+</button>
+                                    <a href="php/add_to_cart.php?name=Raspberries%20%26%20Orchids"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -173,7 +173,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                  <a href="php/add_to_cart.php?name=Sancha%20Lemon"><button>+</button>
+                                  <a href="php/add_to_cart.php?name=Sancha%20Lemon"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -187,15 +187,15 @@
                           <img class="cafea" src="imagini/espresso.jpg" alt="Espresso" width="60" height="60">
                           <div>
                             <div class="item">
-                                <h3>Espresso/Espresso Dublu</h3>
-                                <p>30/50 - ml cafea</p>
+                                <h3>Espresso Dublu</h3>
+                                <p>50 - ml cafea</p>
                             </div>
                             <div class="price-and-add-to-cart">
                                 <div class="price">
-                                    <h4>6/8 lei</h4>
+                                    <h4>8 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                   <a href="php/add_to_cart.php?name=Rooibos%20Delight"><button>+</button>
+                                   <a href="php/add_to_cart.php?name=Espresso%20Dublu"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -212,7 +212,7 @@
                                     <h4>7 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Espresso%20Macchiato"><button>+</button>
+                                    <a href="php/add_to_cart.php?name=Espresso%20Macchiato"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -229,7 +229,7 @@
                                     <h4>7 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Americano"><button>+</button>
+                                    <a href="php/add_to_cart.php?name=Americano"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -246,7 +246,7 @@
                                     <h4>10 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Flat%20White"><button>+</button>
+                                    <a href="php/add_to_cart.php?name=Flat%20White"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -265,7 +265,7 @@
                                     <h4>9 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Cappucino"><button>+</button>
+                                    <a href="php/add_to_cart.php?name=Cappucino"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -282,7 +282,7 @@
                                     <h4>10 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                   <a href="php/add_to_cart.php?name=Caffe%20Latte"><button>+</button>
+                                   <a href="php/add_to_cart.php?name=Caffe%20Latte"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -299,7 +299,7 @@
                                     <h4>11 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Cortado"><button>+</button>
+                                    <a href="php/add_to_cart.php?name=Cortado"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -316,7 +316,7 @@
                                     <h4>14 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Ice%20Coffee"><button>+</button>
+                                    <a href="php/add_to_cart.php?name=Ice%20Coffee"><button>+</button></a>
                                 </div>
                             </div>
                           </div>
@@ -338,7 +338,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Red%Cocktail"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Red%Cocktail"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -355,7 +355,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Green%20Cocktail"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Green%20Cocktail"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -372,7 +372,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Cranberry%20Cocktail"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Cranberry%20Cocktail"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -389,7 +389,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                     <a href="php/add_to_cart.php?name=Summer%20Cocktail"><button>+</button>
+                                     <a href="php/add_to_cart.php?name=Summer%20Cocktail"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -408,7 +408,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Fresh%20de%20portocale"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Fresh%20de%20portocale"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -425,7 +425,7 @@
                                     <h4>12 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Limonadă%20simplă"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Limonadă%20simplă"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -442,7 +442,7 @@
                                     <h4>15 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Limonadă%20cu%20mentă"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Limonadă%20cu%20mentă"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -459,7 +459,7 @@
                                     <h4>17 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Limonadă%20cu%20fructe"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Limonadă%20cu%20fructe"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -473,14 +473,14 @@
                             <img class="desert" src="imagini/croissant.jpg" alt="Croissant" width="60" height="60">
                             <div>
                               <div class="item">
-                                    <h3>Croissant cu unt/ciocolată</h3>
+                                    <h3>Croissant cu unt</h3>
                               </div>
                               <div class="price-and-add-to-cart">
                                   <div class="price">
                                     <h4>8 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Croissant%20cu%20unt"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Croissant%20cu%20unt"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -489,14 +489,14 @@
                             <img class="desert" src="imagini/cookies.jpg" alt="Cookies" width="60" height="60">
                             <div>
                               <div class="item">
-                                  <h3>Cookies cu vanilie/ciocolată</h3>
+                                  <h3>Cookies cu ciocolată</h3>
                               </div>
                               <div class="price-and-add-to-cart">
                                   <div class="price">
                                     <h4>8 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Cookies%20cu%20ciocolată"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Cookies%20cu%20ciocolată"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -512,7 +512,7 @@
                                     <h4>10 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Banana%20Bread"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Banana%20Bread"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -528,7 +528,7 @@
                                     <h4>15 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Lava%20Cake cu înghețată de vanilie"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Lava%20Cake%20cu%20înghețată%20de%20vanilie"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -546,7 +546,7 @@
                                     <h4>18 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Rooibos%20Delight"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Tort%20de%20ciocolată"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -562,7 +562,7 @@
                                     <h4>18 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Rooibos%20Delight"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Cheesecake%20cu%20caramel"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -578,7 +578,7 @@
                                     <h4>18 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Rooibos%20Delight"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Cheesecake%20cu%20căpșuni"><button>+</button></a>
                                   </div>
                               </div>
                             </div>
@@ -594,7 +594,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Rooibos%20Delight"><button>+</button>
+                                      <a href="php/add_to_cart.php?name=Pancakes%20cu%20ciocolată%20și%20banane"><button>+</button></a>
                                   </div>
                               </div>
                             </div>

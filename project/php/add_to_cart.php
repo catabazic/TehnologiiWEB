@@ -2,6 +2,7 @@
 include ("database.php");
 // Retrieve the item details from the query parameters
 $name = $_GET['name'];
+session_start();
 
 //cauta id-ul clientului
 $sql = "SELECT * FROM Clienti WHERE referer=? and cookie_id=?";
@@ -14,6 +15,7 @@ $result = mysqli_stmt_get_result($stmt);
 $row = mysqli_fetch_assoc($result);
 
 $clientID = $row['ID'];
+echo "id client....".$clientID;
 
 //adauga id-ul clientului in baza de date
 $stmt1 = mysqli_prepare($conn, "INSERT INTO Comenzi (ID_Client) VALUES (?)");
