@@ -35,7 +35,7 @@ if($result){
         mysqli_stmt_close($stmt1);
     }  
 }else{
-    echo "Error: " . mysqli_error($connection);
+    echo "Error: " . mysqli_error($conn);
 
 }
 //cauta id-ul produsului
