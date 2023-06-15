@@ -17,13 +17,24 @@ $row = mysqli_fetch_assoc($result);
 $clientID = $row['ID'];
 echo "id client....".$clientID;
 
-//adauga id-ul clientului in baza de date
-$stmt1 = mysqli_prepare($conn, "INSERT INTO Comenzi (ID_Client) VALUES (?)");
-mysqli_stmt_bind_param($stmt1, "i", $clientID);
-mysqli_stmt_execute($stmt1);
+$sql = "SELECT * FROM comenzi where ID_Client=? and Status is NULL ";
+$stmt4 = mysqli_prepare($conn, $sql);
+mysqli_stmt_bind_param($stmt4, "i", $clientID);
+$result = mysqli_stmt_get_result($stmt);
 
-$insertedID = mysqli_insert_id($conn);
+if($result){
+    $row = mysqli_fetch_assoc($result);
+    $insertedID = $row["ID"];
+}else{
+    //adauga id-ul clientului in baza de date
+    $stmt1 = mysqli_prepare($conn, "INSERT INTO Comenzi (ID_Client) VALUES (?)");
+    mysqli_stmt_bind_param($stmt1, "i", $clientID);
+    mysqli_stmt_execute($stmt1);
 
+    $insertedID = mysqli_insert_id($conn);
+    mysqli_stmt_close($stmt1);
+   
+}
 //cauta id-ul produsului
 $sql = "SELECT * FROM Produse WHERE Nume = ?";
 $stmt3 = mysqli_prepare($conn, $sql);
@@ -39,18 +50,13 @@ $stmt2 = mysqli_prepare($conn, $sql);
 mysqli_stmt_bind_param($stmt2, "ii", $insertedID, $row["ID"]);
 mysqli_stmt_execute($stmt2);
 
-if (mysqli_stmt_affected_rows($stmt1) > 0 && mysqli_stmt_affected_rows($stmt2) > 0) {
-    // Item added to the database successfully
-    header("Location: ../meniu.php"); // Replace "../success.php" with the relative path to the desired page
-    exit();
-} else {
-    // Error occurred while adding the item to the database
-    header("Location: ../meniu.php"); // Replace "../error.php" with the relative path to the desired page
-    exit();
-}
+
+header("Location: ../meniu.php"); // Replace "../success.php" with the relative path to the desired page
+exit();
 
 mysqli_stmt_close($stmt);
-mysqli_stmt_close($stmt1);
+mysqli_stmt_close($stmt3);
+mysqli_stmt_close($stmt4);
 mysqli_stmt_close($stmt2);
 mysqli_close($conn);
 ?>
