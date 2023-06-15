@@ -20,7 +20,7 @@ echo "id client....".$clientID;
 $sql = "SELECT * FROM comenzi where ID_Client=? and Status is NULL ";
 $stmt4 = mysqli_prepare($conn, $sql);
 mysqli_stmt_bind_param($stmt4, "i", $clientID);
-$result = mysqli_stmt_get_result($stmt);
+$result = mysqli_stmt_get_result($stmt4);
 
 if($result){
     $row = mysqli_fetch_assoc($result);
