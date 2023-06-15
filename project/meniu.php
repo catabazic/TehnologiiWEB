@@ -29,7 +29,7 @@
             <li><a href="rezervari.php">Rezervări</a></li>
           </ul>
           <div class="cart-icon">
-            <a href="cos.html"><i class="ri-shopping-cart-2-line" style="font-size: 1.5em;"></i></a>
+            <a href="cos.php"><i class="ri-shopping-cart-2-line" style="font-size: 1.5em;"></i></a>
           </div>
         </div>
       </nav>

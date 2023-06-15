@@ -1,5 +1,5 @@
 <?php include 'php/referer.php'; ?>
-
+<?php include 'php/retrieve_products_from_db.php';?>
 <!DOCTYPE html>
 <html lang="en">
 
