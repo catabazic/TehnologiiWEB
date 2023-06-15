@@ -12,4 +12,5 @@ Tea H(TTP)ouse &lt;Bazic Catalina B3>&lt;Cojocarescu Bianca B2>&lt;Frij Alexandr
 - [ ] chistia aia foarte ciudata cu url si adaugarea in meniu
 - [ ] ocuparea localului dinamic [catalina]
 - [ ] exceptii precum <403 Forbidden>
+- [ ] adaugarea unui rand pentru fiecare produs daca e in stoc sau nu(in functie de baza de date)
 
