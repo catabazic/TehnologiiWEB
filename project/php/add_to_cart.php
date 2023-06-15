@@ -4,6 +4,34 @@ include("database.php");
 $name = $_GET['name'];
 session_start();
 
+// Search for the product's ID
+$sql = "SELECT * FROM Produse WHERE Nume = ?";
+$stmt3 = mysqli_prepare($conn, $sql);
+mysqli_stmt_bind_param($stmt3, "s", $name);
+mysqli_stmt_execute($stmt3);
+$result = mysqli_stmt_get_result($stmt3);
+$row = mysqli_fetch_assoc($result);
+$ProductId = $row["ID"];
+$cantitate = $row["Cantitate_in_stoc"];
+
+
+//verificam daca mai exista produsul in stoc, in caz ca nu, nu il vom adauga
+if($cantitate == 0) {
+    echo "Nu e in stoc";
+    mysqli_stmt_close($stmt3);
+    mysqli_close($conn);
+    // header("Location: ../meniu.php");
+    exit();
+} else {
+    echo "e in stoc";
+    $newCantitate = $cantitate-1; // Assign the new value here
+    $sql = "UPDATE Produse SET Cantitate_in_stoc = ? WHERE ID = ?";
+    $stmt5 = mysqli_prepare($conn, $sql);
+    mysqli_stmt_bind_param($stmt5, "ii", $newCantitate, $ProductId);
+    mysqli_stmt_execute($stmt5);
+}
+
+
 // Search for the client's ID
 $sql = "SELECT * FROM Clienti WHERE referer=? AND cookie_id=?";
 $stmt = mysqli_prepare($conn, $sql);
@@ -38,27 +66,20 @@ if ($row) {
 
 mysqli_stmt_close($stmt4);
 
-// Search for the product's ID
-$sql = "SELECT * FROM Produse WHERE Nume = ?";
-$stmt3 = mysqli_prepare($conn, $sql);
-mysqli_stmt_bind_param($stmt3, "s", $name);
-mysqli_stmt_execute($stmt3);
-$result = mysqli_stmt_get_result($stmt3);
-$row = mysqli_fetch_assoc($result);
 
 // Add the requested product to the database
 $sql = "INSERT INTO Comanda_produse (id_comanda, id_produs) VALUES (?, ?)";
 $stmt2 = mysqli_prepare($conn, $sql);
-mysqli_stmt_bind_param($stmt2, "ii", $insertedID, $row["ID"]);
+mysqli_stmt_bind_param($stmt2, "ii", $insertedID, $ProductId);
 mysqli_stmt_execute($stmt2);
 
 
-header("Location: ../meniu.php");
-exit();
 // Close all statements and the database connection
 mysqli_stmt_close($stmt);
 mysqli_stmt_close($stmt2);
 mysqli_stmt_close($stmt3);
 mysqli_close($conn);
 
+header("Location: ../meniu.php");
+exit();
 ?>
