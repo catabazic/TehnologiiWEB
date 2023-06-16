@@ -1,4 +1,5 @@
 <?php include 'php/referer.php'; ?>
+<?php include 'php/verificare_meniu.php'; ?>
 
 <!DOCTYPE html>
 <html lang="ro">
