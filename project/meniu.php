@@ -1,5 +1,6 @@
 <?php include 'php/referer.php'; ?>
-<?php include 'php/verificare_meniu.php'; ?>
+<?php include 'php/stoc_from_db.php'; ?>
+
 
 <!DOCTYPE html>
 <html lang="ro">
