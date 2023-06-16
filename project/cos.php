@@ -1,5 +1,6 @@
 <?php include 'php/referer.php'; ?>
-<?php include 'php/retrieve_products_from_db.php'; ?>
+<!-- <?php include 'php/remove_product.php'; ?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,10 +46,7 @@
                             <tbody id = "data">
                             </tbody>
                         </table>
-                        <div class = "total">
-                            <h4>Total:</h4>
-                            <p>39lei</p>
-                        </div>
+                        <div class = "total"></div>
                     </div>
                     <div class = "formular-plata">
                         <h2>Detalii Card</h2>
