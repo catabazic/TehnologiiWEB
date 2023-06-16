@@ -20,7 +20,7 @@ if($cantitate == 0) {
     echo "Nu e in stoc";
     mysqli_stmt_close($stmt3);
     mysqli_close($conn);
-    // header("Location: ../meniu.php");
+    header("Location: ../meniu.php");
     exit();
 } else {
     echo "e in stoc";

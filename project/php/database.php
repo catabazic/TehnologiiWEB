@@ -11,11 +11,11 @@
                             $db_pass,
                             $db_name);
     }catch(mysqli_sql_exception){
-        //echo "Could not connect to database!";
+        echo "Could not connect to database!";
     }
 
     if($conn){
-       //echo "You are connected!";
+        //echo "You are connected!";
     }
 
 ?>
