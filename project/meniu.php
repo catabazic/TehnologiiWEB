@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/meniu.css">
     <link rel="stylesheet" href="css/meniu_resp.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="javascript/stoc.js"></script>
 </head>
 
 <body>
@@ -57,6 +58,10 @@
                                   <a href="php/add_to_cart.php?name=Sweet%20Cherry"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Sweet%20Cherry">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -74,6 +79,10 @@
                                   <a href="php/add_to_cart.php?name=Rooibos%20Delight"><button>+</button></a>
                                 </div>
                             </div>
+                             <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Rooibos%20Delight">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -91,6 +100,10 @@
                                     <a href="php/add_to_cart.php?name=Cranberry%20Vanilla"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Cranberry%20Vanilla">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -108,6 +121,10 @@
                                     <a href="php/add_to_cart.php?name=Sweet%20Apple"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Sweet%20Apple">-</span>
+                              </div>
                           </div>
                         </div>
                       </div>
@@ -127,6 +144,10 @@
                                    <a href="php/add_to_cart.php?name=Tropical%20Fruit"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Tropical%20Fruit">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -144,6 +165,10 @@
                                     <a href="php/add_to_cart.php?name=Summer%20Passion"><button>+</button></a>
                                 </div>
                             </div>
+                             <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Summer%20Passion">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -161,6 +186,10 @@
                                     <a href="php/add_to_cart.php?name=Raspberries%20%26%20Orchids"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Raspberries%20Orchids">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -178,6 +207,10 @@
                                   <a href="php/add_to_cart.php?name=Sancha%20Lemon"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Sancha%20Lemon">-</span>
+                              </div>
                           </div>
                         </div>
                       </div>
@@ -200,6 +233,10 @@
                                    <a href="php/add_to_cart.php?name=Espresso%20Dublu"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Espresso%20Dublu">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -217,6 +254,10 @@
                                     <a href="php/add_to_cart.php?name=Espresso%20Macchiato"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Espresso%20Macchiato">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -234,6 +275,10 @@
                                     <a href="php/add_to_cart.php?name=Americano"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Americano">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -251,6 +296,10 @@
                                     <a href="php/add_to_cart.php?name=Flat%20White"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Flat%20White">-</span>
+                              </div>
                           </div>
                         </div>
                       </div>
@@ -270,6 +319,10 @@
                                     <a href="php/add_to_cart.php?name=Cappucino"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Cappucino">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -287,6 +340,10 @@
                                    <a href="php/add_to_cart.php?name=Caffe%20Latte"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Caffe%20Latte">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -304,6 +361,10 @@
                                     <a href="php/add_to_cart.php?name=Cortado"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Cortado">-</span>
+                              </div>
                           </div>
                         </div>
                         <div>
@@ -321,6 +382,10 @@
                                     <a href="php/add_to_cart.php?name=Ice%20Coffee"><button>+</button></a>
                                 </div>
                             </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Ice%20Coffee">-</span>
+                              </div>
                           </div>
                         </div>
                       </div>
@@ -343,6 +408,10 @@
                                       <a href="php/add_to_cart.php?name=Red%Cocktail"><button>+</button></a>
                                   </div>
                               </div>
+                                <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Red%20Cocktail">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -360,6 +429,10 @@
                                       <a href="php/add_to_cart.php?name=Green%20Cocktail"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Green%20Cocktail">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -377,6 +450,10 @@
                                       <a href="php/add_to_cart.php?name=Cranberry%20Cocktail"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Cranberry%20Cocktail">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -394,6 +471,10 @@
                                      <a href="php/add_to_cart.php?name=Summer%20Cocktail"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Summer%20Cocktail">-</span>
+                               </div>
                             </div>
                           </div>
                         </div>
@@ -407,12 +488,16 @@
                               </div>
                               <div class="price-and-add-to-cart">
                                   <div class="price">
-                                    <h4>20 lei</h4>
+                                    <h4>20 lei</h4> 
                                   </div>
                                   <div class="add-to-cart">
                                       <a href="php/add_to_cart.php?name=Fresh%20de%20portocale"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Fresh%20de%20portocale">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -430,6 +515,10 @@
                                       <a href="php/add_to_cart.php?name=Limonadă%20simplă"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Limonada%20simpla">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -447,6 +536,10 @@
                                       <a href="php/add_to_cart.php?name=Limonadă%20cu%20mentă"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Limonada%20cu%20menta">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -464,6 +557,10 @@
                                       <a href="php/add_to_cart.php?name=Limonadă%20cu%20fructe"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Limonada%20cu%20fructe">-</span>
+                               </div>
                             </div>
                           </div>
                         </div>
@@ -485,6 +582,10 @@
                                       <a href="php/add_to_cart.php?name=Croissant%20cu%20unt"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Croissant%20cu%20unt">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -501,6 +602,10 @@
                                       <a href="php/add_to_cart.php?name=Cookies%20cu%20ciocolată"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Cookies%20cu%20ciocolata">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -517,6 +622,10 @@
                                       <a href="php/add_to_cart.php?name=Banana%20Bread"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Banana%20bread">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -533,6 +642,10 @@
                                       <a href="php/add_to_cart.php?name=Lava%20Cake%20cu%20înghețată%20de%20vanilie"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Lava%20cake">-</span>
+                               </div>
                             </div>
                           </div>
                         </div>
@@ -551,6 +664,10 @@
                                       <a href="php/add_to_cart.php?name=Tort%20de%20ciocolată"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Tort%20de%20ciocolata">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -567,6 +684,10 @@
                                       <a href="php/add_to_cart.php?name=Cheesecake%20cu%20caramel"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Cheesecake%20cu%20caramel">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -583,6 +704,10 @@
                                       <a href="php/add_to_cart.php?name=Cheesecake%20cu%20căpșuni"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Cheesecake%20cu%20capsuni">-</span>
+                               </div>
                             </div>
                           </div>
                           <div>
@@ -599,6 +724,10 @@
                                       <a href="php/add_to_cart.php?name=Pancakes%20cu%20ciocolată%20și%20banane"><button>+</button></a>
                                   </div>
                               </div>
+                              <div class="availability">
+                                  Disponibilitate:
+                                  <span id="availability_Pancakes%20cu%20ciocolata">-</span>
+                               </div>
                             </div>
                           </div>
                         </div>

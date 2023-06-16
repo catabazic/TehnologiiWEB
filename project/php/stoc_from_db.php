@@ -7,17 +7,19 @@ session_start();
 $sql = "SELECT ID, Cantitate_in_stoc, Nume FROM Produse";
 $result = mysqli_query($conn, $sql);
 
+$stoc = array();
+
 if (mysqli_num_rows($result) > 0) {
     // Parcurg rezultatele și afișez starea de disponibilitate pentru fiecare produs
     while ($row = mysqli_fetch_assoc($result)) {
-        $productId = $row["ID"];
-        $cantitate = $row["Cantitate_in_stoc"];
         $nume = $row["Nume"];
+        $cantitate = $row["Cantitate_in_stoc"];
+        $stoc[$nume] = $cantitate;
 
         if ($cantitate > 0) {
-            echo "Produsul \"$nume\" cu ID-ul $productId este în stoc.<br>";
+            echo "Produsul \"$nume\"  este în stoc.<br>";
         } else {
-            echo "Produsul \"$nume\" cu ID-ul $productId nu este în stoc.<br>";
+            echo "Produsul \"$nume\"  nu este în stoc.<br>";
         }
     }
 } else {
@@ -25,4 +27,7 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 mysqli_close($conn);
+
+// Pasăm rezultatul ca JSON pentru a putea fi accesat în JavaScript
+echo json_encode($stoc);
 ?>
