@@ -1,7 +1,7 @@
 <?php
 include("database.php");
 
-// session_start();
+session_start();
 $referer = $_SESSION['my_referer'];
 $clientID = $_COOKIE['client_id'];
 
@@ -33,7 +33,7 @@ if($row)
     $id_comanda = $row['ID'];
 }
 
-$sql = "SELECT cp.id_produs, p.Nume, p.Pret FROM comanda_produse cp
+$sql = "SELECT cp.id_produs, p.Nume, p.Descriere, p.Pret FROM comanda_produse cp
         INNER JOIN produse p ON cp.id_produs = p.Id
         WHERE cp.id_comanda = ?";
 $stmt2 = mysqli_prepare($conn, $sql);
@@ -41,17 +41,15 @@ mysqli_stmt_bind_param($stmt2, "i", $id_comanda);
 mysqli_stmt_execute($stmt2);
 $result = mysqli_stmt_get_result($stmt2);
 
-
-$products = [];
-$suma = 0;
-while ($row = mysqli_fetch_assoc($result)) {
-    $product = [
-        'id_produs' => $row['id_produs'],
-        'nume' => $row['Nume'],
-        'pret' => $row['Pret']
-    ];
-    $suma += $row['Pret'];
-    $products[] = $product;
+if(mysqli_num_rows($result) > 0)
+{
+    $products = array();
+    while ($row = mysqli_fetch_assoc($result)) {
+     $products[] = $row; 
+    }   
+}
+else {
+    $products = [];
 }
 
 mysqli_stmt_close($stmt);
@@ -59,12 +57,7 @@ mysqli_stmt_close($stmt1);
 mysqli_stmt_close($stmt2);
 mysqli_close($conn);
 
-// foreach ($products as $product) {
-//     echo "Product ID: " . $product['id_produs'] . "<br>";
-//     echo "Name: " . $product['nume'] . "<br>";
-//     echo "Price: " . $product['pret'] . "<br><br>";
-// }
-// echo "suma: ".$suma;
+echo json_encode($products);
 
 
 ?>

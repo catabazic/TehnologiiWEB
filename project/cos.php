@@ -1,5 +1,5 @@
 <?php include 'php/referer.php'; ?>
-<?php include 'php/retrieve_products_from_db.php';?>
+<?php include 'php/retrieve_products_from_db.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +11,7 @@
     <title>Green Tea House</title>
     <link rel="stylesheet" href="css/cos.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <script src = "javascript/cos_prod.js"></script>
 </head>
 
 <body>
@@ -41,28 +42,7 @@
                     <div class = "tabel">
                         <h4>Cos de cumparaturi</h4>
                         <table class = "shopping-table">
-                            <tbody>
-                                <tr>
-                                    <td class = "imagine-produs"><img src = "imagini/cappucino.jpg" alt = "cappucino" width = "50" height="50"></td>
-                                    <td class = "nume-produs">Cappucino<p>Espresso + 150 ml cremă lapte</p></td>
-                                    <td class = "cantitate"><input type="number" value="1"></td>
-                                    <td class = "pret">9lei</td>
-                                    <td><button class="remove"><img src = "imagini/trashcan.png" alt = "trashcan" width="30" height="30"></button></td>
-                                </tr>
-                                <tr>
-                                    <td class = "imagine-produs"><img src = "imagini/summer_tea.jpg" alt = "summer_tea" width = "50" height="50"></td>
-                                    <td class = "nume-produs">Summer Passion<p>Ceai verde, mango, ananas, muguri de trandafir 350 ml</p></td>
-                                    <td class = "cantitate"><input type="number" value="1"></td>
-                                    <td class = "pret">15lei</td>
-                                    <td><button class="remove"><img src = "imagini/trashcan.png" alt = "trashcan" width="30" height="30"></button></td>
-                                </tr>
-                                <tr>
-                                        <td class = "imagine-produs"><img src = "imagini/apple-tea.jpg" alt = "apple_tea" width = "50" height="50"></td>
-                                        <td class = "nume-produs">Sweet Apple<p>bucăți de mere, scorțișoară, măceșe 350 ml</p></td>
-                                        <td class = "cantitate"><input type="number" value="1"></td>
-                                        <td class = "pret">15lei</td>
-                                        <td><button class="remove"><img src = "imagini/trashcan.png" alt = "trashcan" width="30" height="30"></button></td>
-                                    </tr>
+                            <tbody id = "data">
                             </tbody>
                         </table>
                         <div class = "total">

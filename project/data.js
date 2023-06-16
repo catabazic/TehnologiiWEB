@@ -1,0 +1,2 @@
+var products = [{"id_produs":2,"nume":"Rooibos Delight","pret":"15.00"},{"id_produs":2,"nume":"Rooibos Delight","pret":"15.00"},{"id_produs":12,"nume":"Flat White","pret":"10.00"},{"id_produs":8,"nume":"Sancha Lemon","pret":"15.00"},{"id_produs":12,"nume":"Flat White","pret":"10.00"},{"id_produs":7,"nume":"Raspberries & Orchids","pret":"15.00"},{"id_produs":13,"nume":"Cappucino","pret":"9.00"},{"id_produs":7,"nume":"Raspberries & Orchids","pret":"15.00"},{"id_produs":12,"nume":"Flat White","pret":"10.00"}];
+var totalSum = 114;
