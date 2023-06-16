@@ -57,7 +57,13 @@ mysqli_stmt_close($stmt1);
 mysqli_stmt_close($stmt2);
 mysqli_close($conn);
 
-echo json_encode($products);
+$response = array(
+    "id_comanda"=> $id_comanda,
+    "id_client"=> $clientID,
+    "products"=> $products
+);
+
+echo json_encode($response);
 
 
 ?>
