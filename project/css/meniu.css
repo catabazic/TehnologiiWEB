@@ -43,8 +43,9 @@ h3{
     color: #AA965B;
 }
 
-h4{
+h4 {
     margin-top: 2%;
+    margin-bottom: -20px;
     color: #605B3E;
 }
 
@@ -84,12 +85,11 @@ p{
 }
 
 .add-to-cart{
-    margin-left: 10px;
+    margin-left: 350px;
 }
 
 .price-and-add-to-cart
 {
-    
     justify-content: space-between;
 }
 
@@ -101,6 +101,7 @@ p{
 .ceai {
     border-radius: 50%;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 li>a{
