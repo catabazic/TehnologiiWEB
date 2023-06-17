@@ -78,9 +78,9 @@ if (strpos($path, '/intrare') !== false) {
     header("Location: ");
     exit();
 }  elseif(strpos($path, '/alcool') !== false) { {
-    // header("Location: ../index.php?message=" . urlencode("Eroare 403: Produs interzis!"));
-    http_response_code(403);
-    echo "Eroare 403: produs interzis";
+     header("Location: ../error.php?message=" . urlencode("Eroare 403: Produs interzis!"));
+    // http_response_code(403);
+    // echo "Eroare 403: produs interzis";
     exit();
 
     }
