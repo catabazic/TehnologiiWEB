@@ -1,6 +1,7 @@
 -- Create table for Produse
 CREATE TABLE Produse (
     ID INT PRIMARY KEY AUTO_INCREMENT,
+    Tip VARCHAR(255),
     Nume VARCHAR(255),
     Descriere VARCHAR(255),
     Pret DECIMAL(10, 2),
