@@ -1,3 +1,4 @@
+<script src="../project/js/toCart.js"></script>
 <?php
 include "verificare_meniu.php";
 include "sinonime.php";
@@ -7,10 +8,7 @@ $uriParts = parse_url($uri);
 $path = $uriParts['path'];
 
 $comanda = array('/vreau', '/comanda', '/doresc', '/cer');
-
-$potiComanda=array('/suc','/ceva/rece','rece','ceva/cald','cald','desert','ceva/dulce','ceva/bun','ceai','cafea');
-
-
+$potiComanda = array('/suc', '/ceva/rece', 'rece', 'ceva/cald', 'cald', 'desert', 'ceva/dulce', 'ceva/bun', 'ceai', 'cafea');
 
 if (strpos($path, '/intrare') !== false) {
     header("Location: ../index.php");
@@ -20,66 +18,56 @@ if (strpos($path, '/intrare') !== false) {
     exit();
 } elseif (strpos($path, '/preferinta/ceai/') !== false) {
     echo "ceva";
-    // Logica pentru ruta /preferinta/ceai/ 
+    // Logic for route /preferinta/ceai/ 
 } elseif (strpos($path, '/preferinta/ceai') !== false && isset($_GET['de'])) {
     echo "ceva";
-    // Logica pentru ruta /preferinta/ceai?de=tei
+    // Logic for route /preferinta/ceai?de=tei
 } elseif (array_contains_any_keyword($path, $comanda)) {
+
     if (searchWordInArrays($path, $produse)) {
         $array = arrayIn($path, $produse);
-        echo '<script src="js/toCart.js">';
-        echo 'addCart(\'' . $array[0] . '\');';
-        echo '</script>';
-    }
-    if(strpos($path, "meniu.php") !== false){
-        header("Location: ../../meniu.php");
-        exit();
-    }elseif(strpos($path, "index.php") !== false){
-        header("Location: ../../index.php");
-        exit();
-    }elseif(strpos($path, "evenimente.php") !== false){
-        header("Location: ../../evenimente.php");
-        exit();
-    }elseif(strpos($path, "despre.php") !== false){
-        header("Location: ../../despre.php");
-        exit();
-    }elseif(strpos($path, "ajutor.php") !== false){
-        // header("Location: ../../ajutor.php");
-        // exit();
-    }elseif(strpos($path, "rezervari.php") !== false){
-        header("Location: ../../rezervari.php");
-        exit();
-    }elseif(strpos($path, "cos.php") !== false){
-        // header("Location: ../../cos.php");
-        // exit();
-    }else{
-        header("Location: ../../cos.php");
-        exit();
+        $name = $array[0] ;
+        include "add_to_cart.php";
     }
 
 
+    $redirectPage = '';
+    if (strpos($path, "meniu.php") !== false) {
+        $redirectPage = "../../meniu.php";
+    } elseif (strpos($path, "index.php") !== false) {
+        $redirectPage = "../../index.php";
+    } elseif (strpos($path, "evenimente.php") !== false) {
+        $redirectPage = "../../evenimente.php";
+    } elseif (strpos($path, "despre.php") !== false) {
+        $redirectPage = "../../despre.php";
+    } elseif (strpos($path, "ajutor.php") !== false) {
+        $redirectPage = "../../ajutor.php";
+    } elseif (strpos($path, "rezervari.php") !== false) {
+        $redirectPage = "../../rezervari.php";
+    } elseif (strpos($path, "cos.php") !== false) {
+        $redirectPage = "../../cos.php";
+    } else {
+        $redirectPage = "../../cos.php";
+    }
 
-
-
-
-    // Logica pentru ruta /vreau/suc
-} elseif (strpos($path, '/comanda/ceai/') !== false && isset( $_GET['fara'])) {
+    header("Location: $redirectPage");
+    exit();
+} elseif (strpos($path, '/comanda/ceai/') !== false && isset($_GET['fara'])) {
     echo "ceva";
-    // Logica pentru ruta /comanda/ceai/?fara=zahar
+    // Logic for route /comanda/ceai/?fara=zahar
 } elseif (strpos($path, '/comanda/zacusca') !== false) {
     echo "ceva";
-    // Logica pentru ruta /comanda/zacusca
+    // Logic for route /comanda/zacusca
 } elseif (strpos($path, '/nota') !== false) {
     header("Location: ../cos.php");
     exit();
 } elseif (strpos($path, '/iesire') !== false) {
-    header("Location: ");
+    header("Location: ../");
     exit();
 } else {
     echo "ceva";
-    // Logica pentru alte rute necunoscute
+    // Logic for other unknown routes
 }
-
 
 function array_contains_any_keyword($path, $keywords) {
     foreach ($keywords as $keyword) {
@@ -89,6 +77,4 @@ function array_contains_any_keyword($path, $keywords) {
     }
     return false;
 }
-
-
 ?>

@@ -18,23 +18,23 @@ $CaffeLatte=array("Caffe%20Latte","/Caffe/Latte","/caffe/latte","caffe");
 $Cortado=array("Cortado","cartado");
 $IceCoffee=array("Ice%20Coffe","/Ice/Coffe","/ice/coffe","/iced/coffe","cafea/rece");
 
-$RedCocktail=array("Red%20Cocktail","/Red/Cocktail","/red/cocktail");
-$GreenCocktail=array("Green%20Cocktail");
-$CranberryCocktail=array("Cranberry%20Cocktail");
-$SummerCochtail=array("Summer%20Cocktail");
-$FreshPortocale=array("Fresh%20de%20portocale");
-$LimonadaSimpla=array("Limonada%20simpla");
-$LimonadaMenta=array("Limonada%20cu%20menta");
-$LimonadaFructe=array("Limonada%20cu%20fructe");
+$RedCocktail=array("Red%20Cocktail","/Red/Cocktail","/red/cocktail","cocktail");
+$GreenCocktail=array("Green%20Cocktail","Green/Cocktail","green/cocktail");
+$CranberryCocktail=array("Cranberry%20Cocktail","Cranberry/Cocktail","cranberry/cocktail");
+$SummerCochtail=array("Summer%20Cocktail","Summer/Cocktail","summer/cocktail",);
+$FreshPortocale=array("Fresh%20de%20portocale","Fresh/de/portocale","fresh/de/portocale","fresh","suc","suc/portocale","fresh/portocale");
+$LimonadaSimpla=array("Limonada%20simpla","Limonada/simpla","limonada/simpla","limonada");
+$LimonadaMenta=array("Limonada%20cu%20menta","limonada/cu/menta","limonada/menta");
+$LimonadaFructe=array("Limonada%20cu%20fructe","limonada/cu/fructe","limonada/fructe");
 
-$CroistantUnt=array("Croissant%20cu%20unt");
-$CookiesCiocolata=array("Cookies%20cu%20ciocolata");
-$BananaBread=array("Banana%20Bread");
-$LavaCake=array("Lava%20Cake%20cu%20inghetata%20de%20vanilie");
-$TortCiocolata=array("Tort%20de%20ciocolata");
-$CheesecakeCatamel=array("Cheesecake%20cu%20caramel");
-$CheesecakeCapsuni=array("Cheesecake%20cu%20capsuni");
-$Pancakes=array("Pancakes%20cu%20ciocolata%20si%20banane");
+$CroistantUnt=array("Croissant%20cu%20unt","croissant/cu/unt","croissant/unt", "croissant");
+$CookiesCiocolata=array("Cookies%20cu%20ciocolata","cookies/cu/ciocolata","cookies/ciocolata","cookies");
+$BananaBread=array("Banana%20Bread","banana/bread","bread");
+$LavaCake=array("Lava%20Cake%20cu%20inghetata%20de%20vanilie","lava/cake/cu/inghetata/de/vanilie","lava/cake","inghetata");
+$TortCiocolata=array("Tort%20de%20ciocolata","tort/de/ciocolata","tort","tort/ciocolata");
+$CheesecakeCatamel=array("Cheesecake%20cu%20caramel","cheesecake/cu/caramel","cheesecake/caramel","cheesecake");
+$CheesecakeCapsuni=array("Cheesecake%20cu%20capsuni","cheesecake/cu/capsuni","cheesecake/capsuni");
+$Pancakes=array("Pancakes%20cu%20ciocolata%20si%20banane","pancakes/cu/ciocolata/si/banane","pancakes","pancakes/cu/ciocolata","pancakes/cu/banana");
 
 $produse = array(
     $TropicalFruit,
