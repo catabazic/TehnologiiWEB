@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/meniu_resp.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <script src="javascript/stoc.js"></script>
+    <script src="js/toCart.js"></script>
 </head>
 
 <body>
@@ -55,7 +56,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                  <a href="php/add_to_cart.php?name=Sweet%20Cherry"><button>+</button></a>
+                                  <button onclick="addCart('Sweet Cherry')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -76,7 +77,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                  <a href="php/add_to_cart.php?name=Rooibos%20Delight"><button>+</button></a>
+                                <button onclick="addCart('Rooibos Delight')">+</button>
                                 </div>
                             </div>
                              <div class="availability">
@@ -97,7 +98,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Cranberry%20Vanilla"><button>+</button></a>
+                                <button onclick="addCart('Cranberry Vanilla')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -118,7 +119,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Sweet%20Apple"><button>+</button></a>
+                                <button onclick="addCart('Sweet Apple')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -141,7 +142,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                   <a href="php/add_to_cart.php?name=Tropical%20Fruit"><button>+</button></a>
+                                <button onclick="addCart('Tropical Fruit')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -162,7 +163,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Summer%20Passion"><button>+</button></a>
+                                <button onclick="addCart('Summer Passion')">+</button>
                                 </div>
                             </div>
                              <div class="availability">
@@ -183,7 +184,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Raspberries%20%26%20Orchids"><button>+</button></a>
+                                <button onclick="addCart('Raspberries & Orchids')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -204,7 +205,7 @@
                                     <h4>15 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                  <a href="php/add_to_cart.php?name=Sancha%20Lemon"><button>+</button></a>
+                                <button onclick="addCart('Sancha Lemon')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -230,7 +231,7 @@
                                     <h4>8 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                   <a href="php/add_to_cart.php?name=Espresso%20Dublu"><button>+</button></a>
+                                <button onclick="addCart('Espresso Dublu')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -251,7 +252,7 @@
                                     <h4>7 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Espresso%20Macchiato"><button>+</button></a>
+                                <button onclick="addCart('Espresso Macchiato')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -272,7 +273,7 @@
                                     <h4>7 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Americano"><button>+</button></a>
+                                <button onclick="addCart('Americano')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -293,7 +294,7 @@
                                     <h4>10 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Flat%20White"><button>+</button></a>
+                                <button onclick="addCart('Flat White')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -316,7 +317,7 @@
                                     <h4>9 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Cappucino"><button>+</button></a>
+                                <button onclick="addCart('Cappucino')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -337,7 +338,7 @@
                                     <h4>10 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                   <a href="php/add_to_cart.php?name=Caffe%20Latte"><button>+</button></a>
+                                <button onclick="addCart('Caffe Latte')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -358,7 +359,7 @@
                                     <h4>11 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Cortado"><button>+</button></a>
+                                <button onclick="addCart('Cortado')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -379,7 +380,7 @@
                                     <h4>14 lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=Ice%20Coffee"><button>+</button></a>
+                                <button onclick="addCart('Ice Coffee')">+</button>
                                 </div>
                             </div>
                               <div class="availability">
@@ -405,7 +406,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Red%Cocktail"><button>+</button></a>
+                                  <button onclick="addCart('Red Cocktail')">+</button>
                                   </div>
                               </div>
                                 <div class="availability">
@@ -426,7 +427,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Green%20Cocktail"><button>+</button></a>
+                                  <button onclick="addCart('Green Cocktail')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -447,7 +448,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Cranberry%20Cocktail"><button>+</button></a>
+                                  <button onclick="addCart('Cranberry Cocktail')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -468,7 +469,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                     <a href="php/add_to_cart.php?name=Summer%20Cocktail"><button>+</button></a>
+                                  <button onclick="addCart('Summer Cocktail')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -491,7 +492,7 @@
                                     <h4>20 lei</h4> 
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Fresh%20de%20portocale"><button>+</button></a>
+                                  <button onclick="addCart('Fresh de portocale')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -512,7 +513,7 @@
                                     <h4>12 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Limonadă%20simplă"><button>+</button></a>
+                                  <button onclick="addCart('Limonadă simplă')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -533,7 +534,7 @@
                                     <h4>15 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Limonadă%20cu%20mentă"><button>+</button></a>
+                                  <button onclick="addCart('Limonadă cu mentă')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -554,7 +555,7 @@
                                     <h4>17 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Limonadă%20cu%20fructe"><button>+</button></a>
+                                  <button onclick="addCart('Limonadă cu fructe')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -579,7 +580,7 @@
                                     <h4>8 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Croissant%20cu%20unt"><button>+</button></a>
+                                  <button onclick="addCart('Croissant cu unt')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -599,7 +600,7 @@
                                     <h4>8 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Cookies%20cu%20ciocolată"><button>+</button></a>
+                                  <button onclick="addCart('Cookies cu ciocolată')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -619,7 +620,7 @@
                                     <h4>10 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Banana%20Bread"><button>+</button></a>
+                                  <button onclick="addCart('Banana Bread')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -639,7 +640,7 @@
                                     <h4>15 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Lava%20Cake%20cu%20înghețată%20de%20vanilie"><button>+</button></a>
+                                  <button onclick="addCart('Lava Cake cu înghețată de vanilie')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -661,7 +662,7 @@
                                     <h4>18 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Tort%20de%20ciocolată"><button>+</button></a>
+                                  <button onclick="addCart('Tort de ciocolată')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -681,7 +682,7 @@
                                     <h4>18 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Cheesecake%20cu%20caramel"><button>+</button></a>
+                                  <button onclick="addCart('Cheesecake cu caramel')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -701,7 +702,7 @@
                                     <h4>18 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Cheesecake%20cu%20căpșuni"><button>+</button></a>
+                                  <button onclick="addCart('Cheesecake cu căpșuni')">+</button>
                                   </div>
                               </div>
                               <div class="availability">
@@ -721,7 +722,7 @@
                                     <h4>20 lei</h4>
                                   </div>
                                   <div class="add-to-cart">
-                                      <a href="php/add_to_cart.php?name=Pancakes%20cu%20ciocolată%20și%20banane"><button>+</button></a>
+                                  <button onclick="addCart('Pancakes cu ciocolată și banane')">+</button>
                                   </div>
                               </div>
                               <div class="availability">

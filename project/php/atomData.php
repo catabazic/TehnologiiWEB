@@ -7,13 +7,11 @@
 
     // Check if the query was successful
     if ($result) {
-        // Fetch all rows and store them in $json_data
         $json_data = array();
         while ($row = mysqli_fetch_assoc($result)) {
             $json_data[] = $row;
         }
 
-        // Output the fetched data for debugging
         echo "<pre>";
         print_r($json_data);
         echo "</pre>";
@@ -22,9 +20,9 @@
     }
     $entries = '';
     foreach ($json_data as $entry) {
-        $id = $entry['id']; // Id-ul din baza de date
-        $numar_locuri = $entry['numar_locuri']; // Numărul de locuri din baza de date
-        $ocupate = $entry['ocupate']; // Numărul de locuri ocupate din baza de date
+        $id = $entry['id']; 
+        $numar_locuri = $entry['numar_locuri']; 
+        $ocupate = $entry['ocupate']; 
         
         $entries .= '
             <entry>
