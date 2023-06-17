@@ -22,7 +22,7 @@ echo "A apărut o eroare. Vă rugăm să reveniți mai târziu.";
     exit();
 }
 
-$sql = "SELECT ID FROM Comenzi where ID_Client = ?";
+$sql = "SELECT ID FROM Comenzi where ID_Client = ? AND Status IS NULL";
 $stmt1 = mysqli_prepare($conn, $sql);
 mysqli_stmt_bind_param($stmt1, "i", $clientID);
 mysqli_stmt_execute($stmt1);
