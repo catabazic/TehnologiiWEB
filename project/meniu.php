@@ -1,5 +1,5 @@
 <?php include 'php/referer.php'; ?>
-<?php include 'php/add_url.php'; ?>
+<?php include 'php/erorrs.php'; ?>
 
 
 <!DOCTYPE html>

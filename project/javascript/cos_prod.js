@@ -38,7 +38,7 @@ function removeItem(item) {
         if (response.ok) {
           resolve();
         } else {
-          reject(new Error("A apărut o eroare în timpul eliminării produsului."));
+          reject(new Error("Eroare la eliminarea produsului."));
         }
       }).catch(function(error) {
         reject(error);
