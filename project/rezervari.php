@@ -129,7 +129,7 @@
                     <h4>Numărul de locuri: 35</h4>
                     <h4>Numărul de locuri ocupate: <?php include("php/locuri_ocupate.php"); echo $ocupat;  ?> </h4>
                     <h4>Numărul de locuri libere: <?php include("php/locuri_libere.php"); echo $liber;  ?></h4>
-                    <h4>Poti vedea locurile care sunt libere <a href="mese_json.html">aici</a></h4>
+                    <h4>Poti vedea locurile care sunt libere in format json <a href="php/jsonData.php">aici</a>, sau in format atom <a href="php/atomData.php">aici</a></h4>
                 </div>
             </div>
         </main>
