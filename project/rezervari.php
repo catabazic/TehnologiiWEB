@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/rezervari.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <script src="js/dynamic_check.js"></script>
+    <script src="js/toCart.js"></script>
+
 </head>
 
 <body>

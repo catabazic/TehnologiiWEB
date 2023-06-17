@@ -4,14 +4,18 @@
     }
 }
 
-@media ( max-width: 1020px) {
+.meniu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
 .cart-icon{
     margin-top: 5%;
 }
-.meniu-container {
-    flex-wrap: wrap;
-    max-width: 100vw;
-}
+
 .items > div {
     max-width: 70vw;
 }
@@ -120,7 +124,6 @@ li>a{
 }
 */
  
-}
 @media (max-width: 850px) {
     nav {
         height: 10vh;

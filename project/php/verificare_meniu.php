@@ -154,6 +154,7 @@ $meniu = array(
 );
 
 // Verificați dacă există un parametru 'add_to_cart' în URL
+
 if (isset($_GET['add_to_cart'])) {
     // Get the product name from the URL
     $url = $_SERVER['REQUEST_URI'];
