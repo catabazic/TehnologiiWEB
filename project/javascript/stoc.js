@@ -14,10 +14,11 @@ function fetchData() {
                     <div class="container-item" >
                    
                         <img class="ceai" src="imagini/${nume}.jpg" alt="${nume}" width="60" height="60">
-                        <div>
+                        <div> 
                             <div class="item">
                                 <h3>${nume}</h3>
                                 <p>${produs.descriere}</p>
+                                <p>Disponibilitate: ${produs.inStoc ? 'În stoc' : 'Indisponibil'}</p>
                             </div>
                             <div class="price-and-add-to-cart">
                                 <div class="price">

@@ -6,7 +6,6 @@ if (formular) {
         var numarCard = document.getElementById('nr-card').value;
         var dataExpirare = document.getElementById('data-expirare').value;
         var cvv = document.getElementById('cvv').value;
-        console.log(cvv);
 
         var regex = /^[a-zA-Z\s]*$/;
         if (!regex.test(numeCard)) {

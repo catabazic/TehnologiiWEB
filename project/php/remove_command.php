@@ -41,14 +41,20 @@ if(isset($_POST))
     mysqli_stmt_bind_param($stmt2, "i",$id_comanda);
     mysqli_stmt_execute($stmt2);
 
-    if (mysqli_stmt_affected_rows($stmt2) > 0) {
+    $sql = "UPDATE comenzi SET Status = 'platit' WHERE ID = ? AND id_client = ? ";
+    $stmt3 = mysqli_prepare($conn, $sql);
+    mysqli_stmt_bind_param($stmt3, "ii",$id_comanda, $clientID);
+    mysqli_stmt_execute($stmt3);
+    if (mysqli_stmt_affected_rows($stmt3) > 0) {
         echo json_encode("Produsele au fost sterse!");
 
         } else {
            echo json_encode( "Produsele nu au fost sterse!");
 
         }
-     mysqli_stmt_close($stmt2);
+
+    mysqli_stmt_close($stmt2);
+    mysqli_stmt_close($stmt3);
 }
 mysqli_stmt_close($stmt);
 mysqli_stmt_close($stmt1);
