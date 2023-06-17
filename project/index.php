@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/homepage_responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="js/toCart.js"></script>
+
 </head>
 
 <body>
@@ -23,7 +25,7 @@
             <div class="navigare">
               <ul>
                 <li><a href="index.php">Acasă</a></li>
-                <li><a href="meniu.html">Meniu</a></li>
+                <li><a href="meniu.php">Meniu</a></li>
                 <li><a href="evenimente.php">Evenimente</a></li>
                 <li><a href="despre.php">Despre</a></li>
                 <li><a href="ajutor.php">Ajutor</a></li>

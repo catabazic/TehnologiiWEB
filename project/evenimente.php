@@ -23,7 +23,7 @@
             <div class="navigare">
               <ul>
                 <li><a href="index.php">Acasă</a></li>
-                <li><a href="meniu.html">Meniu</a></li>
+                <li><a href="meniu.php">Meniu</a></li>
                 <li><a href="evenimente.php">Evenimente</a></li>
                 <li><a href="despre.php">Despre</a></li>
                 <li><a href="ajutor.php">Ajutor</a></li>
