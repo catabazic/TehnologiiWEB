@@ -156,6 +156,8 @@ $meniu = array(
 
 // Verificați dacă există un parametru 'add_to_cart' în URL
 if(isset($_GET['add_to_cart'])){
+    echo "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+    echo $_SERVER['QUERY_STRING'];
     $url = $_SERVER['REQUEST_URI'];
     $path = parse_url($url, PHP_URL_PATH);
     $segments = explode('/', $path);
