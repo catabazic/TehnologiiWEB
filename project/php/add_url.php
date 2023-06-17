@@ -10,7 +10,9 @@ $comanda = array('/vreau', '/comanda', '/doresc', '/cer');
 
 $potiComanda=array('/suc','/ceva/rece','rece','ceva/cald','cald','desert','ceva/dulce','ceva/bun','ceai','cafea');
 
+$nuPotiComanda = 'alcool';
 
+$caiCunoscute = array('/meniu.php', '/evenimente.php','/index.php','/cos.php', '/rezervari.php','/despre.php', '/ajutor.php');
 
 if (strpos($path, '/intrare') !== false) {
     header("Location: ../index.php");
@@ -73,11 +75,28 @@ if (strpos($path, '/intrare') !== false) {
 } elseif (strpos($path, '/iesire') !== false) {
     header("Location: ");
     exit();
-} else {
-    echo "ceva";
-    // Logica pentru alte rute necunoscute
-}
+}  elseif(strpos($path, '/alcool') !== false) { {
+    // header("Location: ../index.php?message=" . urlencode("Eroare 403: Produs interzis!"));
+    http_response_code(403);
+    echo "Eroare 403: produs interzis";
+    exit();
 
+    }
+}else{
+    $pageFound = false;
+    foreach ($caiCunoscute as $cai) {
+        if (strpos($path, $cai) !== false) {
+            $pageFound = true;
+            break;
+        }
+    }
+    if (!$pageFound) {
+        http_response_code(404);
+        echo "Eroare 404: Pagina nu a fost gasita!";
+        exit();
+    }
+
+}
 
 function array_contains_any_keyword($path, $keywords) {
     foreach ($keywords as $keyword) {
