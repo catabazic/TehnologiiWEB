@@ -1,5 +1,4 @@
 <?php include 'php/referer.php'; ?>
-<?php include 'php/erorrs.php'; ?>
 
 
 <!DOCTYPE html>
