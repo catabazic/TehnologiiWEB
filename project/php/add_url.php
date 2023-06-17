@@ -103,13 +103,13 @@ if (strpos($path, '/intrare') !== false || strpos($path, '/acasa') !== false) {
 } elseif (strpos($path, '.php/evenimente') !== false) {
     header("Location: ../evenimente");
     exit();
-} elseif(strpos($path, '/alcool') !== false) { {
+} elseif((strpos($path, '/alcool') !== false)||(strpos($path, '/wisky') !== false)||(strpos($path, '/tuica') !== false)||(strpos($path, '/vodka') !== false)||(strpos($path, '/rom') !== false)||(strpos($path, '/mojito') !== false)) { {
      header("Location: ../error.php?message=" . urlencode("Eroare 403: Produs interzis!"));
     // http_response_code(403);
     // echo "Eroare 403: produs interzis";
     exit();
 
-    }
+}
 }else{
     $pageFound = false;
     foreach ($caiCunoscute as $cai) {
