@@ -1,5 +1,5 @@
 <?php include 'php/referer.php'; ?>
-<?php include 'php/stoc_from_db.php'; ?>
+<?php include 'php/add_url.php'; ?>
 
 
 <!DOCTYPE html>

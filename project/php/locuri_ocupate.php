@@ -13,6 +13,6 @@
     }
     
 
-    //echo $ocupat;
+    echo $ocupat;
     
 ?>
