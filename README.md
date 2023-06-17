@@ -6,8 +6,8 @@ Tea H(TTP)ouse &lt;Bazic Catalina B3>&lt;Cojocarescu Bianca B2>&lt;Frij Alexandr
 
 - [x] adaugare in baza de date produse, etc [stefania]
 - [x] backend pentru a adauga in meniu [catalina]
-- [ ] backend pentru a achita
-- [x] de a face functional cosul(cand adaugi in cos ceva sa iti apare scrisul, imaginea la ce ai adaugat)
+- [ ] backend pentru a achita [stefania]
+- [x] de a face functional cosul(cand adaugi in cos ceva sa iti apare produsul, poate fi sters)[stefania]
 - [x] recunoasterea clientului [catalina]
 - [ ] chistia aia foarte ciudata cu url si adaugarea in meniu [bianca]
 - [ ] ocuparea localului dinamic [catalina]
