@@ -24,7 +24,7 @@ function fetchData() {
                                     <h4>${produs.pret} lei</h4>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="php/add_to_cart.php?name=${encodeURIComponent(nume)}"><button>+</button></a>
+                                    <button onclick="addCart('${nume}')">+</button>
                                 </div>
                             </div>
                         </div>

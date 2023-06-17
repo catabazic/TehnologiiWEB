@@ -25,9 +25,11 @@ if (strpos($path, '/intrare') !== false) {
     echo "ceva";
     // Logica pentru ruta /preferinta/ceai?de=tei
 } elseif (array_contains_any_keyword($path, $comanda)) {
-    if(searchWordInArrays($path,$produse)){
-        $array=arrayIn($path,$produse);?>
-        <script src="../toCart.js">adCart(<?php echo $array[0]; ?>);</script><?php
+    if (searchWordInArrays($path, $produse)) {
+        $array = arrayIn($path, $produse);
+        echo '<script src="js/toCart.js">';
+        echo 'addCart(\'' . $array[0] . '\');';
+        echo '</script>';
     }
     if(strpos($path, "meniu.php") !== false){
         header("Location: ../../meniu.php");
@@ -42,8 +44,8 @@ if (strpos($path, '/intrare') !== false) {
         header("Location: ../../despre.php");
         exit();
     }elseif(strpos($path, "ajutor.php") !== false){
-        header("Location: ../../ajutor.php");
-        exit();
+        // header("Location: ../../ajutor.php");
+        // exit();
     }elseif(strpos($path, "rezervari.php") !== false){
         header("Location: ../../rezervari.php");
         exit();
