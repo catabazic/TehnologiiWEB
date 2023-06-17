@@ -30,5 +30,6 @@ if (isset($_GET['seatNumber']) && isset($_GET['isChecked'])) {
 } else {
     echo "Invalid request";
 }
+//include "jsonData.php"
 
 ?>
