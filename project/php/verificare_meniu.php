@@ -1,5 +1,4 @@
 <?php
-session_start();
 include("database.php");
 
 $meniu = array(
@@ -155,116 +154,102 @@ $meniu = array(
 );
 
 // Verificați dacă există un parametru 'add_to_cart' în URL
-if(isset($_GET['add_to_cart'])){
-    echo "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-    echo $_SERVER['QUERY_STRING'];
-    $url = $_SERVER['REQUEST_URI'];
-    $path = parse_url($url, PHP_URL_PATH);
-    $segments = explode('/', $path);
-    $product = end($segments);
 
-    // Verificăm dacă produsul există în meniu
+if (isset($_GET['add_to_cart'])) {
+    // Get the product name from the URL
+    $url = $_SERVER['REQUEST_URI'];
+    $product = basename($url);
+
+    // Check if the product exists in the menu
     if (!isset($meniu[$product])) {
         echo "Produsul nu există în meniu.";
         exit();
     }
 
-    // Obținem detaliile produsului din meniu
-    $productDetails = $meniu[$product];
-    $productName = $productDetails['nume'];
-    $productOptions = $productDetails['optiuni'];
-
-     // Căutați opțiunile selectate în URL
-     $selectedOption = null;
-    foreach ($productOptions as $option) {
-         if (isset($_GET[$option['nume']])) {
-             $selectedOption = $option;
-             break;
-         }
+    // Get the selected option from the URL
+    $selectedOption = null;
+    foreach ($meniu[$product]['optiuni'] as $option) {
+        if (isset($_GET[$option['nume']])) {
+            $selectedOption = $option;
+            break;
+        }
     }
 
-    // Verificați dacă s-a selectat o opțiune validă
+    // Check if a valid option is selected
     if (!$selectedOption) {
         echo "Nu s-a selectat o opțiune validă.";
         exit();
     }
 
-    //Caut ID-ul produsului
-    $sql = "SELECT * FROM Produse WHERE Nume = ?";
-    $stmt3 = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt3, "s", $productName);
-    mysqli_stmt_execute($stmt3);
-    $result = mysqli_stmt_get_result($stmt3);
-    $row = mysqli_fetch_assoc($result);
-    $ProductId = $row["ID"];
-    $cantitate = $row["Cantitate_in_stoc"];
-
-    //Verific daca mai exista produsul in stoc
-    if($cantitate == 0) {
-        echo "Nu e in stoc";
-        mysqli_stmt_close($stmt3);
-        mysqli_close($conn);
-        header("Location: ../meniu.php");
-        exit();
-    } else {
-        echo "e in stoc";
-        $newCantitate = $cantitate-1; // Assign the new value here
-        $sql = "UPDATE Produse SET Cantitate_in_stoc = ? WHERE ID = ?";
-        $stmt5 = mysqli_prepare($conn, $sql);
-        mysqli_stmt_bind_param($stmt5, "ii", $newCantitate, $ProductId);
-        mysqli_stmt_execute($stmt5);
-    }
-
-    //Caut ID-ul clientului
-    $sql = "SELECT * FROM Clienti WHERE referer=? AND cookie_id=?";
+    // Check if the product is in stock
+    $productName = $meniu[$product]['nume'];
+    $sql = "SELECT ID, Cantitate_in_stoc FROM Produse WHERE Nume = ?";
     $stmt = mysqli_prepare($conn, $sql);
-    $referer = $_SESSION['my_referer'];
-    $clientID = $_COOKIE['client_id'];
-    mysqli_stmt_bind_param($stmt, "ss", $referer, $clientID);
+    mysqli_stmt_bind_param($stmt, "s", $productName);
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
     $row = mysqli_fetch_assoc($result);
+    $productId = $row["ID"];
+    $quantityInStock = $row["Cantitate_in_stoc"];
 
-    $clientID = $row['ID'];
-    echo "id client...." . $clientID;
-
-    $sql = "SELECT * FROM `Comenzi` WHERE ID_Client=? AND Status IS NULL LIMIT 0, 25";
-    $stmt4 = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt4, "i", $clientID);
-    mysqli_stmt_execute($stmt4);
-    $result = mysqli_stmt_get_result($stmt4);
-    $row = mysqli_fetch_assoc($result);
-
-    if ($row) {
-        $insertedID = $row['ID'];
-    } else {
-        // Add the client's ID to the database
-        $stmt1 = mysqli_prepare($conn, "INSERT INTO Comenzi (ID_Client) VALUES (?)");
-        mysqli_stmt_bind_param($stmt1, "i", $clientID);
-        mysqli_stmt_execute($stmt1);
-
-        $insertedID = mysqli_insert_id($conn);
-        mysqli_stmt_close($stmt1);
+    if ($quantityInStock <= 0) {
+        echo "Produsul nu este în stoc.";
+        mysqli_stmt_close($stmt);
+        mysqli_close($conn);
+        header("Location: ../meniu.php");
+        exit();
     }
 
-    mysqli_stmt_close($stmt4);
+    // Update the quantity in stock
+    $newQuantity = $quantityInStock - 1;
+    $sql = "UPDATE Produse SET Cantitate_in_stoc = ? WHERE ID = ?";
+    $stmt = mysqli_prepare($conn, $sql);
+    mysqli_stmt_bind_param($stmt, "ii", $newQuantity, $productId);
+    mysqli_stmt_execute($stmt);
 
-    // Adaug produsul in baza de date
-    $sql = "INSERT INTO Comanda_produse (id_comanda, id_produs) VALUES (?, ?)";
-    $stmt2 = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt2, "ii", $insertedID, $ProductId);
-    mysqli_stmt_execute($stmt2);
+    // Get the client ID
+    $referer = isset($_SESSION['my_referer']) ? $_SESSION['my_referer'] : '';
+    $clientId = isset($_COOKIE['client_id']) ? $_COOKIE['client_id'] : '';
 
-    echo "Produsul \"$productName\" a fost adăugat în coș.";
+    $sql = "SELECT ID FROM Clienti WHERE Referer = ? AND ClientID = ?";
+    $stmt = mysqli_prepare($conn, $sql);
+    mysqli_stmt_bind_param($stmt, "ss", $referer, $clientId);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+    $row = mysqli_fetch_assoc($result);
+    $clientId = $row ? $row["ID"] : null;
 
-    // Close all statements and the database connection
+    // Get or create the order ID
+    $orderId = null;
+    if ($clientId) {
+        $sql = "SELECT ID FROM Comenzi WHERE ClientID = ? AND Stare = 'deschis'";
+        $stmt = mysqli_prepare($conn, $sql);
+        mysqli_stmt_bind_param($stmt, "i", $clientId);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+        $row = mysqli_fetch_assoc($result);
+        $orderId = $row ? $row["ID"] : null;
+    }
+
+    if (!$orderId) {
+        $sql = "INSERT INTO Comenzi (ClientID) VALUES (?)";
+        $stmt = mysqli_prepare($conn, $sql);
+        mysqli_stmt_bind_param($stmt, "i", $clientId);
+        mysqli_stmt_execute($stmt);
+        $orderId = mysqli_insert_id($conn);
+    }
+
+    // Insert the product and order IDs into the Comanda_produse table
+    $sql = "INSERT INTO Comanda_produse (ComandaID, ProdusID) VALUES (?, ?)";
+    $stmt = mysqli_prepare($conn, $sql);
+    mysqli_stmt_bind_param($stmt, "ii", $orderId, $productId);
+    mysqli_stmt_execute($stmt);
+
+    // Show success message and redirect to the menu page
+    echo "Produsul a fost adăugat în coș.";
     mysqli_stmt_close($stmt);
-    mysqli_stmt_close($stmt2);
-    mysqli_stmt_close($stmt3);
     mysqli_close($conn);
-
     header("Location: ../meniu.php");
     exit();
 }
-
 ?>

@@ -20,8 +20,8 @@ function toggleCheckbox(tableNr, seatNr, checkboxId) {
                 // Invalid response
                 console.log(response);
             }
-            recalculateLocLiber(); // Moved the function call inside the response handler
-            recalculateLocOcupat(); // Moved the function call inside the response handler
+            recalculateLocLiber();
+            recalculateLocOcupat(); 
         }
     };
 

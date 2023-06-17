@@ -1,5 +1,6 @@
 <?php include 'php/referer.php'; ?>
 <!-- <?php include 'php/remove_product.php'; ?> -->
+<?php include 'php/add_url.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="css/cos.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <script src = "javascript/cos_prod.js"></script>
+   
 </head>
 
 <body>
@@ -47,6 +49,7 @@
                             </tbody>
                         </table>
                         <div class = "total"></div>
+                        
                     </div>
                     <div class = "formular-plata">
                         <h2>Detalii Card</h2>
@@ -56,24 +59,22 @@
                             <img src = "imagini/MasterCard_Logo.png" alt = "master_logo" width="70" height="60">
                             <img src = "imagini/rupay-logo.png" alt ="rupay_logo" width="70" height="60">
                         </div>
-                        <form class = "formular">
+                        <form class = "formular" id = "form" >
                             <label for="nume">Nume Card:</label><br>
-                            <input type="text" id="nume" name="nume" value="Nume"><br>
+                            <input type="text" id="nume" name="nume" placeholder="Nume" required><br>
                             <label for="nr-card">Numar Card:</label><br>
-                            <input type="text" id="nr-card" name="nr-card" value="1111 2222 3333 4444">
+                            <input type="text" id="nr-card" name="nr-card" placeholder="1111 2222 3333 4444" required>
                             <div class = "alte-date">
                                 <label for = "data-expirare">Data Expirare</label>
                                 <label for = "cvv">CVV</label>
                             </div>
                             <div class = "alte-date-input">
                                 <input type="text" id="data-expirare" name="data-expirare" pattern="\d{2}/\d{4}" placeholder="MM/YYYY" required>
-                                <input type = "text" id = "cvv" name = "cvv">
+                                <input type = "text" id = "cvv" name = "cvv" placeholder="000" required>
                             </div>
-                            <div class = "suma">
-                                <p>TOTAL:</p>
-                                <p>39lei</p>
-                            </div>
-                            <input class = "submit-button" type = "submit" value = "PLATESTE">
+                           
+                            <input class = "submit-button" id = "buton-plata" type = "submit" value = "PLATESTE">
+                            <script src = "javascript/validare_form.js"></script>
                         </form>
                     </div>
             </div>
