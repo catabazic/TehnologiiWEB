@@ -117,8 +117,9 @@ if (strpos($path, '/intrare') !== false || strpos($path, '/acasa') !== false) {
         }
     }
     if (!$pageFound) {
-        http_response_code(404);
-        echo "Eroare 404: Pagina nu a fost gasita!";
+        header("Location: ../error.php?message=" . urlencode("Eroare 404: Pagina nu a fost gasita!"));
+        // http_response_code(404);
+        // echo "Eroare 404: Pagina nu a fost gasita!";
         exit();
     }
 

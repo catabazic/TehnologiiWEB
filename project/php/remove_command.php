@@ -22,7 +22,7 @@ echo "A apărut o eroare. Vă rugăm să reveniți mai târziu.";
     exit();
 }
 
-$sql = "SELECT ID FROM Comenzi where ID_Client = ?";
+$sql = "SELECT ID FROM Comenzi where ID_Client = ? AND Status IS NULL";
 $stmt1 = mysqli_prepare($conn, $sql);
 mysqli_stmt_bind_param($stmt1, "i", $clientID);
 mysqli_stmt_execute($stmt1);
@@ -36,14 +36,16 @@ if($row)
 
 if(isset($_POST))
 {
-    $sql = "DELETE FROM Comanda_produse WHERE id_comanda = ?";
-    $stmt2 = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt2, "i",$id_comanda);
-    mysqli_stmt_execute($stmt2);
-
-    $sql = "UPDATE comenzi SET Status = 'platit' WHERE ID = ? AND id_client = ? ";
+    // $sql = "DELETE FROM Comanda_produse WHERE id_comanda = ?";
+    // $stmt2 = mysqli_prepare($conn, $sql);
+    // mysqli_stmt_bind_param($stmt2, "i",$id_comanda);
+    // mysqli_stmt_execute($stmt2);
+    date_default_timezone_set('Europe/Bucharest');
+    $dataCurenta = date("Y/m/d");
+    $oraCurenta = date('H:i:s');
+    $sql = "UPDATE comenzi SET Status = 'platit', Data = ?, Ora = ? WHERE ID = ? AND id_client = ? ";
     $stmt3 = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt3, "ii",$id_comanda, $clientID);
+    mysqli_stmt_bind_param($stmt3, "ssii",$dataCurenta, $oraCurenta,$id_comanda, $clientID);
     mysqli_stmt_execute($stmt3);
     if (mysqli_stmt_affected_rows($stmt3) > 0) {
         echo json_encode("Produsele au fost sterse!");
@@ -53,7 +55,7 @@ if(isset($_POST))
 
         }
 
-    mysqli_stmt_close($stmt2);
+    // mysqli_stmt_close($stmt2);
     mysqli_stmt_close($stmt3);
 }
 mysqli_stmt_close($stmt);
