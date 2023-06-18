@@ -5,7 +5,9 @@ session_start();
 $referer = $_SESSION['my_referer'];
 $clientID = $_COOKIE['client_id'];
 
-// Search for the client's ID based on the referer and client ID
+if(isset($_POST))
+{
+    // Search for the client's ID based on the referer and client ID
 $sql = "SELECT ID FROM Clienti WHERE referer=? AND cookie_id=?";
 $stmt = mysqli_prepare($conn, $sql);
 mysqli_stmt_bind_param($stmt, "ss", $referer, $clientID);
@@ -33,9 +35,6 @@ if($row)
     $id_comanda = $row['ID'];
 }
 
-
-if(isset($_POST))
-{
     // $sql = "DELETE FROM Comanda_produse WHERE id_comanda = ?";
     // $stmt2 = mysqli_prepare($conn, $sql);
     // mysqli_stmt_bind_param($stmt2, "i",$id_comanda);
