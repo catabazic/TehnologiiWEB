@@ -40,3 +40,11 @@ CREATE TABLE Mese (
     numar_locuri INT,
     ocupate INT
 );
+
+CREATE TABLE admin (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user Varchar(30),
+    password Varchar(30),
+    reg_date Date
+);
+
