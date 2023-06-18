@@ -19,6 +19,7 @@
             <div class="site-logo">
                 <img src="imagini/logo-teahouse.png" alt="logo" width="60" height="60">
             </div>
+            <div class = "data"></div>
             
         </nav>
         <main>
