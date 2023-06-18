@@ -2,11 +2,11 @@
     <feed xmlns="http://www.w3.org/2005/Atom">
         <title>My Atom Feed</title>
         <link href="https://example.com/feed.xml" rel="self"/>
-        <updated>2023-06-18T19:58:20+02:00</updated>
+        <updated>2023-06-18T21:00:07+02:00</updated>
         
             <entry>
                 <title>1</title>
-                <content>Numar locuri: 4, Ocupate: 4</content>
+                <content>Numar locuri: 4, Ocupate: 0</content>
             </entry>
             <entry>
                 <title>2</title>
@@ -14,7 +14,7 @@
             </entry>
             <entry>
                 <title>3</title>
-                <content>Numar locuri: 4, Ocupate: 1</content>
+                <content>Numar locuri: 4, Ocupate: 0</content>
             </entry>
             <entry>
                 <title>4</title>
@@ -22,7 +22,7 @@
             </entry>
             <entry>
                 <title>5</title>
-                <content>Numar locuri: 4, Ocupate: 3</content>
+                <content>Numar locuri: 4, Ocupate: 0</content>
             </entry>
             <entry>
                 <title>6</title>
@@ -30,10 +30,10 @@
             </entry>
             <entry>
                 <title>7</title>
-                <content>Numar locuri: 5, Ocupate: 2</content>
+                <content>Numar locuri: 5, Ocupate: 0</content>
             </entry>
             <entry>
                 <title>8</title>
-                <content>Numar locuri: 6, Ocupate: 2</content>
+                <content>Numar locuri: 6, Ocupate: 0</content>
             </entry>
     </feed>

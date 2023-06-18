@@ -26,7 +26,20 @@ if (isset($_SESSION['my_referer'])) {
             //echo "Could not register user: " . $e->getMessage();
         }
     } else {
-       // echo "Referer is not set.";
+        $referer = "nu este setat";
+        $_SESSION['my_referer'] = $referer;
+        //echo "Sesiunea a fost începută. Referer: " . $referer;
+
+        $clientID = uniqid(); 
+        setcookie("client_id", $clientID, time() + (86400 * 160), "/");
+
+        $sql = "INSERT INTO clienti (referer, cookie_id) VALUES ('$referer', '$clientID')";
+        try {
+            mysqli_query($conn, $sql);
+            //echo "Am adaugat in bd";
+        } catch (mysqli_sql_exception $e) {
+            //echo "Could not register user: " . $e->getMessage();
+        }
     }
 }
 mysqli_close($conn);
