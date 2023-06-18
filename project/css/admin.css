@@ -192,4 +192,41 @@ table.shopping-table {
     width: 30px;
     height: 30px;
   }
-  
+  tr{
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 300px;
+}
+
+td {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+}
+
+td:first-child{
+    border-left:  2px solid gray;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+td:last-child{
+    border-right:  2px solid gray;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+.produs{
+    font-weight: bold;
+    color: #AA965B;
+}
+
+.produs>p{
+    color: #938E8E
+}
+.pay{
+    border-radius: 50%;
+}
+
+.check{
+    border-radius: 50%;
+}
