@@ -258,31 +258,61 @@ li>a {
     }
 
     main {
-      min-height: 100vh;
-      height: auto;
+        min-height: 80vh;
+        height: auto;
     }
 
-    body {
-        background-size: auto;
+    .body{
+        height: 100vh;
+        margin: 0;
+        background-image: url('../imagini/background-photo.jpg');
+        background-size: 165%;
+        background-position: center;
     }
     
-    .container {
-        margin-top: 100vh;
+    .container{
+        position: relative;
+        z-index: 1;
+        background-color: #ffffff;
+        background-size: cover;
+        background-position: center;
+        margin-top: 10vh;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 90vh ;
     }
 
     .container-item {
-        font-size: px; 
+        font-size: 10px; 
         margin-right: 165px;
     }
+
 
     .ceai {
         width: 10%;
         height: 10%;
-        margin-left: 190px;
+        margin-left: 120px;
     }
 
     .price-and-add-to-cart {
-        justify-items: left;
+        display: flex;
+        justify-content: space-between;
+        margin-left: -100px; /* Adjust the left margin as needed */
+    }
+      
+    .price {
+        margin-right: 10px; /* Adjust the right margin as needed */
+    }
+      
+    .add-to-cart {
+        margin-left: 10px; /* Adjust the left margin as needed */
+    }
+
+    .add-to-cart button {
+        font-size: 8px; /* Default font size for the button */
+        padding: 3px 3px; /* Adjust the button padding as needed */
     }
 
   }
