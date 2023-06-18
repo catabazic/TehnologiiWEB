@@ -299,20 +299,20 @@ li>a {
     .price-and-add-to-cart {
         display: flex;
         justify-content: space-between;
-        margin-left: -100px; /* Adjust the left margin as needed */
+        margin-left: -100px; 
     }
       
     .price {
-        margin-right: 10px; /* Adjust the right margin as needed */
+        margin-right: 10px; 
     }
       
     .add-to-cart {
-        margin-left: 10px; /* Adjust the left margin as needed */
+        margin-left: 10px; 
     }
 
     .add-to-cart button {
-        font-size: 8px; /* Default font size for the button */
-        padding: 3px 3px; /* Adjust the button padding as needed */
+        font-size: 8px; 
+        padding: 3px 3px; /
     }
 
   }
