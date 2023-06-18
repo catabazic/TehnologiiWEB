@@ -40,10 +40,12 @@ if(isset($_POST))
     // $stmt2 = mysqli_prepare($conn, $sql);
     // mysqli_stmt_bind_param($stmt2, "i",$id_comanda);
     // mysqli_stmt_execute($stmt2);
-
-    $sql = "UPDATE comenzi SET Status = 'platit' WHERE ID = ? AND id_client = ? ";
+    date_default_timezone_set('Europe/Bucharest');
+    $dataCurenta = date("Y/m/d");
+    $oraCurenta = date('H:i:s');
+    $sql = "UPDATE comenzi SET Status = 'platit', Data = ?, Ora = ? WHERE ID = ? AND id_client = ? ";
     $stmt3 = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt3, "ii",$id_comanda, $clientID);
+    mysqli_stmt_bind_param($stmt3, "ssii",$dataCurenta, $oraCurenta,$id_comanda, $clientID);
     mysqli_stmt_execute($stmt3);
     if (mysqli_stmt_affected_rows($stmt3) > 0) {
         echo json_encode("Produsele au fost sterse!");
