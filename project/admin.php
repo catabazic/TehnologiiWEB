@@ -1,3 +1,4 @@
+
 <?php include "php/welcome.php" ?>
 
 <!DOCTYPE html>
@@ -9,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Tea House</title>
     <link rel="stylesheet" href="css/admin.css">
+    <script src = "javascript/unpayed_commands.js"></script>
     
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 </head>
@@ -23,7 +25,8 @@
               <ul>
                 <li><a href="php/logout.php">Logout</a></li>
               </ul>
-            </div>            
+            </div>
+            <div id = "data"></div>
         </nav>
         <div class = "container-main">
         </form>
