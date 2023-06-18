@@ -16,7 +16,7 @@ if (isset($_SESSION['my_referer'])) {
         //echo "Sesiunea a fost începută. Referer: " . $referer;
 
         $clientID = uniqid(); 
-        setcookie("client_id", $clientID, time() + (86400 * 30), "/");
+        setcookie("client_id", $clientID, time() + (86400 * 160), "/");
 
         $sql = "INSERT INTO clienti (referer, cookie_id) VALUES ('$referer', '$clientID')";
         try {
