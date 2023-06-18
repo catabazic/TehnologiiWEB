@@ -223,3 +223,10 @@ td:last-child{
 .produs>p{
     color: #938E8E
 }
+.pay{
+    border-radius: 50%;
+}
+
+.check{
+    border-radius: 50%;
+}
