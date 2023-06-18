@@ -61,7 +61,7 @@
                     <p> Exista si restrictii in privinta comenzilor facute din URL. Daca vei incerca sa comanzi alcool nu va fi permis, fiind 
                         un produs nepotrivit ceainariei noastre.
                     </p>
-                    <p> Poti incerca sa introduceti in URL si: "/vreau/cinci" sau "/vreau/fericire" pentru un zambet in plus pe ziua de azi.</p>
+                    <p> Poti incerca sa introduci in URL si: "/vreau/cinci" sau "/vreau/fericire" pentru un zambet in plus pe ziua de azi.</p>
                   </details>
                   <details>
                     <summary>COSUL DE CUMPARATURI</summary>
