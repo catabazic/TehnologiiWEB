@@ -57,7 +57,7 @@ xhr.onreadystatechange = function() {
                     }
                 }
                 td1.innerHTML = id[i] + '<p>' + p + '</p>';
-                td2.innerHTML = '<button class="pay" onclick="payCommand(this)" data-id-comanda="' + id[i] + '"><img class = "check" rc="imagini/pay.png" alt="pay" width="30" height="30"></button>';
+                td2.innerHTML = '<button class="pay" onclick="payCommand(this)" data-id-comanda="' + id[i] + '"><img class = "check" src="imagini/pay.png" alt="pay" width="30" height="30"></button>';
                 td1.classList.add('produs');
                 document.getElementById("data").appendChild(tr);
             }
