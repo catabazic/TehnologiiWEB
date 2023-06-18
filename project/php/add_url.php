@@ -56,7 +56,7 @@ if (strpos($path, '/intrare') !== false || strpos($path, '/acasa') !== false) {
         $array = arrayIn($path, $produse);
         $name = $array[0] ;
         include "add_to_cart.php";
-    }    
+    } 
     if(isset($_GET['cu'])){
         $pathCu=$_GET['cu'];
         if(searchWordInArrays($pathCu, $produse)){
@@ -83,14 +83,22 @@ if (strpos($path, '/intrare') !== false || strpos($path, '/acasa') !== false) {
         $redirectPage = "../../cos.php";
     } else {
         $redirectPage = "../../cos.php";
-    }
+    }   
+    if ((strpos($path, '/alcool') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
 
     header("Location: $redirectPage");
     exit();
 } elseif (strpos($path, '/nota') !== false) {
     header("Location: ../cos.php");
     exit();
-} elseif (strpos($path, '.php/ajutor') !== false) {
+} elseif((strpos($path, '/alcool') !== false)||(strpos($path, '/wisky') !== false)||(strpos($path, '/tuica') !== false)||(strpos($path, '/vodka') !== false)||(strpos($path, '/rom') !== false)||(strpos($path, '/mojito') !== false)) { 
+    header("Location: ../error.php?message=" . urlencode("Eroare 403: Produs interzis!"));
+   // http_response_code(403);
+   // echo "Eroare 403: produs interzis";
+   //exit();
+}elseif (strpos($path, '.php/ajutor') !== false) {
     header("Location: ../ajutor.php");
     exit();
 } elseif (strpos($path, '.php/despre') !== false) {
@@ -101,14 +109,9 @@ if (strpos($path, '/intrare') !== false || strpos($path, '/acasa') !== false) {
     header("Location: ../");
     exit();
 } elseif (strpos($path, '.php/evenimente') !== false) {
-    header("Location: ../evenimente");
+    header("Location: ../evenimente.php");
     exit();
-} elseif((strpos($path, '/alcool') !== false)||(strpos($path, '/wisky') !== false)||(strpos($path, '/tuica') !== false)||(strpos($path, '/vodka') !== false)||(strpos($path, '/rom') !== false)||(strpos($path, '/mojito') !== false)) { 
-     header("Location: ../error.php?message=" . urlencode("Eroare 403: Produs interzis!"));
-    // http_response_code(403);
-    // echo "Eroare 403: produs interzis";
-    exit();
-}else{
+} else{
     $pageFound = false;
     foreach ($caiCunoscute as $cai) {
         if (strpos($path, $cai) !== false) {

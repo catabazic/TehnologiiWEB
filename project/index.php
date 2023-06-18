@@ -1,10 +1,6 @@
-<!-- <?php
-// if (isset($_GET['message'])) {
-//     $errorMessage = $_GET['message'];
-//     echo '<script>alert("' . $errorMessage . '");</script>';
-// }
-?> -->
-
+<?php include 'php/referer.php'; ?>
+<!-- <?php include 'php/erorrs.php'; ?> -->
+<?php include 'php/add_url.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
