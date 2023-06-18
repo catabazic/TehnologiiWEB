@@ -181,6 +181,20 @@
                 asigura o identificare cat mai corecta a clientului, deoarece refer poate fi acelasi pentru doi clienti diferiti sau gol, astfel alaturi de cookie ID, care este unicat pentru fiecare 
                client, identificarea clientilor este una sigura. </p>
         </section>
+        <h3>Comanda prin URL</h3>
+        <p> Un exemplu de comanda realizata prin URL poate fi acesta: "http://localhost/TehnologiiWEB/project/meniu.php/vreau/ceai?de=zmeura",
+            care va adauga produsul "Raspberries & Orchids" in cos, care este un ceai de zmeura. In acest fel se pot
+            adauga in cos si urmatoarele sortimente de ceai: "cirese", "roibos", "merisore", "mar", "frcuteTropicale",
+            "vara", "zmeura", "lamaie", acestea fiind toate sortimentele disponibile de ceai.</p>
+        <p> Tot in acelasi mod, se poate comanda orice item din meniu, tastand doar "/vreau/numeleProdusului"</p>
+        <p> Se pot comanda si combo-uri, un exemplu fiind: "http://localhost/TehnologiiWEB/project/cos.php/vreau/suc?cu=tort" 
+            si se va adauga in cos un tort de ciocolata si un fresh de portocale.</p>
+        <p> De asemenea, in URL se accepta si sinonime.</p>
+        <p> Exista si restrictii in privinta comenzilor facute din URL. Daca se incearca comandarea de alcool, va aparea un mesaj de eroare,
+            care va specifica ca este interzis.
+        </p>
+        <h3>Administrare</h3>
+        <p>Dupa autentificare, administratorul poate finaliza plata cash facuta de client.</p>
         <section>
             <h2>Resurse</h2>
             <p>Imaginile folosite pentru crearea meniului, a cosului de cumparaturi si pagina acasa au fost preluate de pe <a href="https://unsplash.com/">Unsplash</a>, 
