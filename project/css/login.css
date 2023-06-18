@@ -203,3 +203,116 @@ li>a {
     background-color: #605B3E;
   }
   
+  .price{
+    margin-left: 275px;
+}
+
+.add-to-cart{
+    margin-left: 350px;
+}
+
+  .cart-icon {
+    margin-top: 5%;
+  }
+  
+  footer {
+    background-color: rgb(102, 102, 102);
+    background-size: cover;
+    padding: 20px;
+    text-align: left;
+    padding-bottom: 1cm;
+  }
+  
+  footer > h3 {
+    color: black;
+  }
+  
+  footer > p {
+    color: black;
+  }
+  
+  @media (max-width: 850px) {
+    nav {
+      height: 10vh;
+      border-bottom: #605B3E;
+      position: relative;
+      background-color: #E2D7B7;
+    }
+  
+    .navigare > ul {
+      height: 100%;
+      display: flex;
+      grid-template-columns: 10% 90%;
+      grid-template-rows: 100%;
+      padding-left: 0;
+      flex-wrap: wrap;
+    }
+  
+    .site-logo {
+      margin: 0;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      grid-column: 1/2;
+      justify-content: center;
+      margin: 0;
+    }
+  
+    li > a {
+      color: #FFFF;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: none;
+      font-size: small;
+    }
+  
+    .site-logo > img {
+      max-width: 5vh;
+      max-height: 5vh;
+      margin-right: 0;
+    }
+  
+    .cart-icon {
+      /*grid-column: 3/4;*/
+      margin-top: 10%;
+      margin-right: 50px;
+      margin-left: 20%;
+    }
+  
+    .navigare {
+      border: 2px solid #605B3E;
+      border-left: none;
+      border-right: none;
+      grid-column: 2/2;
+      display: grid;
+      grid-template-columns: 80% 5% 10% 5%;
+    }
+  
+    li {
+      list-style: none;
+      padding-left: 7%;
+    }
+  
+    body {
+      height: 100vh;
+      margin: 0;
+      background-image: url('../imagini/background-photo.jpg');
+      background-size: 165%;
+      background-position: center;
+    }
+  
+    .container {
+      position: relative;
+      z-index: 1;
+      background-size: cover;
+      background-position: center;
+      margin-top: 10vh;
+      margin-left: 0;
+      margin-right: 0;
+      padding-bottom: 1cm;
+      display: flex;
+      flex-direction: column;
+      min-height: 90vh;
+      height: auto;
+    }
+  }
+  
