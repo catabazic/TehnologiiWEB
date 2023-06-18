@@ -121,7 +121,7 @@ if (strpos($path, '/intrare') !== false || strpos($path, '/acasa') !== false) {
         $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produsul este inaccesibil studentilor!");
     } 
     if ((strpos($path, '/cinci') !== false)) {
-        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Haideti, va rugam");
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Haideti,va rugam(;´༎ຶД༎ຶ`)");
     } 
     header("Location: $redirectPage");
     exit();
