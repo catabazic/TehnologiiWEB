@@ -1,4 +1,4 @@
-
+<?php include "php/extract_unpayed_commands.php" ?>
 
 <!DOCTYPE html>
 <html lang="ro">
