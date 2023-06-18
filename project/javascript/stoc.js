@@ -6,7 +6,7 @@ function fetchData() {
             const meniuContainerCafea = document.getElementById('meniu-container-cafea');
             const meniuContainerCevaRece = document.getElementById('meniu-container-ceva-rece');
             const meniuContainerDesert = document.getElementById('meniu-container-desert');
-            console.log(data);
+           //console.log(data);
             Object.keys(data).forEach(nume => {
                 const produs = data[nume];
                 const itemContainer = document.createElement('div');
@@ -31,7 +31,7 @@ function fetchData() {
                         </div>
                     </div>
                 `;
-                console.log(nume);
+                //console.log(nume);
                 if (produs['tip'].toLowerCase().includes('ceai')) {
                     meniuContainerCeai.appendChild(itemContainer);
                 } else if (produs['tip'].toLowerCase().includes('cafea')) {

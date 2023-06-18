@@ -124,6 +124,63 @@
             <img src ="design/rezervari-telefon.png" alt="rezervari-telefon" width="250" height="400">  
             <img src ="design/cos-telefon.png" alt="cos-telefon" width="250" height="400">  
         </section>
+        <section class = "backend">
+            <h2>Backend-ul aplicatiei</h2>
+            <h3>Diagramele C4</h3>
+            <h4>Diagrama nivel 1</h4>
+            <img src ="design/C4-1.png" alt="C4-1" width="400" height="600">  
+            <h4>Diagrama nivel 2</h4>
+            <img src ="design/C4-2.png" alt="C4-2" width="500" height="600"> 
+            <h4>Diagrama nivel 3</h4>
+            <img src ="design/C4-3.png" alt="C4-3" width="600" height="600"> 
+            <h3>Server si stocarea datelor</h3>
+            <p>Pentru realizarea aplicatiei am recurs la utilizarea XAMPP, platforma de dezvoltare web ce include un server Apache precum si 
+                un server de baza de date MySQL, aplicatia ruland la nivel local.</p>
+            <p>Stocarea datelor este realizata prin intermediul sistemului de gestionare de baze de date MySQL. MySQL ofera un mediu robust si 
+                eficient pentru stocarea, gestionarea si accesarea datelor structurate. Este compatibil cu o varietate de limbaje de programare 
+                si platforme de dezvoltare, fiind o alegere populara in contextul dezvoltarii de aplcatii web.</p> 
+            <p>Datele sunt structurate pe 5 tabele: </p>  
+            <img src ="design/tabele-db.png" alt="tabele-bd" width="900" height="210">  
+            <p>Tabela Clienti: contine informatii despre clientii conectati in acest moment pe site dar si despre clientii ce au accesat anterior site-ul.
+                Pentru fiecare client, se va memora refer-ul dar si cookie id-ul si i se va genera un id unic.</p> 
+            <p>Tabela Comenzi: contine informatii despre comenzile clientilor. La adaugarea unui produs in cosul de cumparaturi, in tabela 
+                se va adauha un nou rand atribuit comenzii, ce va contine un id unic al comenzii si id-ul clientului. Dupa efectuarea platii, 
+                comanda este completata prin adaugarea datei si orei la care plata a avut loc precum si statusul comenzii: platit.</p>
+            <p>Tabela Produse: contine o lista a informatiilor despre produsele din ceainarie, precum id unic, nume, categorie, descriere, pret si 
+                cantitate in stoc.</p>
+            <p>Tabela Mese: contine informatii precum id-ul unic al mesei, numarul de locuri disponibile si numarul de locuri ocupate.</p> 
+            <p>Tabela Comanda-produse: contine id-urile fiecarei comenzi plasate si id-urile produselor din comanda respectiva.</p>
+            <p>Datele venite de la server sunt exportate in format JSON si XML.</p>
+            <h3>Tehnologii folosite</h3>
+            <h4>Limbaje de programare</h4>
+            <p>Limbajele de programare utilizate sunt PHP si JavaScript.</p>
+            <p>PH este un limbaj de programare versatil, conceput exclusiv pentru dezvoltarea de aplicatii web, fiind usor integrabil cu HTML si CSS. Ofera suport pentru interactiunea cu baze de date, 
+                fiind adesea folosit alaturi de sisteme de gestiune a bazelor de date. Este un limbaj popular, cu o comunitate vasta ce ofera performanta si scalabilitate, fiind o alegere buna 
+                pentru dezvoltarea aplicatiilor web. </p>
+            <p>JavaScript este un limbaj de programare universal ce poate fi folosit atat pe partea clientului, in browser cat si pe partea serverului.
+                Perminte o manipulre mai usoara a datelor in format JSON pentru transmiterea informatiilor intre server si client, precum faciliteaza si interactiunea cu API-uri.</p>
+            <h4>AJAX</h4>
+            <p>Una dintre tehnologiile folosite la dezvoltarea aplicatiei este AJAX (Asynchronous JavaScript and XML), folosita pentru afisarea in mod asincron a informatiilor venite de la server.
+                In mod concret, in cadrul aplicatiei, AJAX este folosit la afisarea dinamica a produselor din cosul de cumparaturi, in cadrul caruia produsele pot fi eliminate, presupunand astfel 
+                 recalcularea pretului final precum si afisarea doar a produselor ramase, AJAX faciliteaza afisarea cosului fara a fi necesar un refresh al intregii pagini. De asemenea, AJAX este utilizat si 
+                 pentru afisarea asincrona a numarului de locuri rezervate in ceainarie.
+                Pentru afisarea produselor in cos, se face o cerere in care bazat pe id-ul clientului, se preiau produsele din baza de date si sunt afisate. Daca clientul decide sa renunte la un produs, 
+                atunci o noua cerere este trimisa pentru a se returna noua lista cu produse si totalul este actualizat. </p>   
+            <img src ="design/produse-cos.png" alt="produse-cos" width="750" height="500">    
+            <img src ="design/recalculare-total.png" alt="recalculare-total" width="550" height="500">    
+            <h4>Arborele DOM (Document Object Model)</h4>
+            <p>Arborele DOM a fost folosit la crearea tabelului cu produse din cosul de cumparaturi. S-a recurs la utilizarea arborelul DOM pentru a facilita 
+                modul de actualizare a tabelului atunci cand un produs este sters: prin arborele DOM, atunci cand clientul decide sa renunte la un produs si sa il stearga, 
+                linia corespunzatoare produsului este eliminata fara a fi necesar un refresh al paginii.</p>
+            <h4>Template</h4>
+            <p>Template a fost utilizat pentru afisarea meniului a carui produse sunt extrase din baza de date. </p> 
+            <img src ="design/template-meniu.png" alt="template-meniu" width="700" height="450">      
+            <h4>Refer si Cookie ID</h4>
+            <p>Identificarea clientilor se realizeaza prin intermediu refer-ului (antet HTTP care furnizeaza informatii despre sursa de unde a fost 
+                accesata pagina web curenta) si cookie ID (identificator unic atribuit unui cookie specific). S-a recurs la folosirea atat a refer cat si a cookie ID pentru a 
+                asigura o identificare cat mai corecta a clientului, deoarece refer poate fi acelasi pentru doi clienti diferiti sau gol, astfel alaturi de cookie ID, care este unicat pentru fiecare 
+               client, identificarea clientilor este una sigura. </p>
+        </section>
         <section>
             <h2>Resurse</h2>
             <p>Imaginile folosite pentru crearea meniului, a cosului de cumparaturi si pagina acasa au fost preluate de pe <a href="https://unsplash.com/">Unsplash</a>, 
