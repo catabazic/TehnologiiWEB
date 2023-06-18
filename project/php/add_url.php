@@ -121,7 +121,7 @@ if (strpos($path, '/intrare') !== false || strpos($path, '/acasa') !== false) {
         $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produsul este inaccesibil studentilor!");
     } 
     if ((strpos($path, '/cinci') !== false)) {
-        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Haideti, va rugam");
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Haideti,va rugam(;´༎ຶД༎ຶ`)");
     } 
     header("Location: $redirectPage");
     exit();
@@ -154,12 +154,12 @@ if (strpos($path, '/intrare') !== false || strpos($path, '/acasa') !== false) {
             break;
         }
     }
-    if (!$pageFound) {
-        header("Location: ../error.php?message=" . urlencode("Eroare 404: Pagina nu a fost gasita!"));
-        // http_response_code(404);
-        // echo "Eroare 404: Pagina nu a fost gasita!";
-        exit();
-    }
+    // if (!$pageFound) {
+    //     header("Location: ../error.php?message=" . urlencode("Eroare 404: Pagina nu a fost gasita!"));
+    //     // http_response_code(404);
+    //     // echo "Eroare 404: Pagina nu a fost gasita!";
+    //     exit();
+    // }
 
 }
 
