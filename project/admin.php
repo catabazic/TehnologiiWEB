@@ -26,10 +26,6 @@
         <main>
         </main>
     </div>
-    <script src="javascript/stoc.js"></script>
-    <script>
-        fetchData();
-    </script>
 </body>
 
 </html>
