@@ -22,7 +22,7 @@ echo "A apărut o eroare. Vă rugăm să reveniți mai târziu.";
     exit();
 }
 
-$sql = "SELECT ID FROM Comenzi where ID_Client = ?";
+$sql = "SELECT ID FROM Comenzi where ID_Client = ? AND Status IS NULL";
 $stmt1 = mysqli_prepare($conn, $sql);
 mysqli_stmt_bind_param($stmt1, "i", $clientID);
 mysqli_stmt_execute($stmt1);
@@ -36,10 +36,10 @@ if($row)
 
 if(isset($_POST))
 {
-    $sql = "DELETE FROM Comanda_produse WHERE id_comanda = ?";
-    $stmt2 = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt2, "i",$id_comanda);
-    mysqli_stmt_execute($stmt2);
+    // $sql = "DELETE FROM Comanda_produse WHERE id_comanda = ?";
+    // $stmt2 = mysqli_prepare($conn, $sql);
+    // mysqli_stmt_bind_param($stmt2, "i",$id_comanda);
+    // mysqli_stmt_execute($stmt2);
 
     $sql = "UPDATE comenzi SET Status = 'platit' WHERE ID = ? AND id_client = ? ";
     $stmt3 = mysqli_prepare($conn, $sql);
@@ -53,7 +53,7 @@ if(isset($_POST))
 
         }
 
-    mysqli_stmt_close($stmt2);
+    // mysqli_stmt_close($stmt2);
     mysqli_stmt_close($stmt3);
 }
 mysqli_stmt_close($stmt);
