@@ -11,7 +11,7 @@ $result = mysqli_query($conn, $sql);
 $stoc = array();
 
 if (mysqli_num_rows($result) > 0) {
-    while ($row = mysqli_fetch_assoc($result)) {
+    while ($row = mysqli_fetch_assoc($result)) {    
         $nume = $row["Nume"];
         $tip = $row["Tip"];
         $descriere = $row["Descriere"];
