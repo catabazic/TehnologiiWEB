@@ -5,6 +5,7 @@ var asynchronous = true;
 xhr.open(method, url, asynchronous);
 xhr.send();
 function makePay(id_command) {
+    return new Promise(function(resolve, reject) {
       fetch("php/makePay.php", {
         "method": "POST",
         "headers": {
@@ -24,6 +25,7 @@ function makePay(id_command) {
       }).catch(function(error) {
         reject(error);
       });
+    });
   }
   
 function payCommand(command)
@@ -50,7 +52,8 @@ xhr.onreadystatechange = function() {
                 if (prods.length !== 0) {
                     for (var j = 0; j < prods.length; j++) {
                         p += prods[j]; 
-                        p += " ";
+                        if(j !== prods.length - 1 )
+                          p += ", ";
                     }
                 }
                 td1.innerHTML = id[i] + '<p>' + p + '</p>';
