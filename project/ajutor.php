@@ -43,6 +43,12 @@
                     <p> Acceseaza meniul din pagina dedicata -Meniu-. 
                         Alege produsele preferate dand scroll pe pagina si adauga produselel in cos bifand check-box-ul de la final. 
                         Continua cumparaturile cu bauturile sau gustarile preferate!</p>
+                    <p> De asemenea poti comanda si prin intermediul URL-ului. De exemplu, daca doriti un ceai de zmeura,
+                        puteti scrie in URL astfel: "http://localhost/TehnologiiWEB/project/meniu.php/vreau/ceai?de=zmeura",
+                        iar produsul "Raspberries & Orchids" care este un ceai de zmeura, va fi adaugat in cos. In acest fel puteti
+                        adauga in cos si urmatoarele sortimente de ceai: "cirese", "roibos", "merisore", "mar", "frcuteTropicale",
+                        "vara", "zmeura", "lamaie", acestea fiind toate sortimentele noastre de ceai.
+                    </p>
                   </details>
                   <details>
                     <summary>COSUL DE CUMPARATURI</summary>
