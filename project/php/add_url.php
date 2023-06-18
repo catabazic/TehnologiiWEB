@@ -87,7 +87,42 @@ if (strpos($path, '/intrare') !== false || strpos($path, '/acasa') !== false) {
     if ((strpos($path, '/alcool') !== false)) {
         $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
     } 
-
+    if ((strpos($path, '/whiskey') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
+    if ((strpos($path, '/tuica') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
+    if ((strpos($path, '/tigari') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
+    if ((strpos($path, '/palinca') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
+    if ((strpos($path, '/vodka') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
+    if ((strpos($path, '/bere') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
+    if ((strpos($path, '/vin') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
+    if ((strpos($path, '/martini') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
+    if ((strpos($path, '/iarba') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
+    if ((strpos($path, '/droguri') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produs interzis!");
+    } 
+    if ((strpos($path, '/fericire') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Produsul este inaccesibil studentilor!");
+    } 
+    if ((strpos($path, '/cinci') !== false)) {
+        $redirectPage = "../../error.php?message=" . urlencode("Eroare 403: Haideti, va rugam");
+    } 
     header("Location: $redirectPage");
     exit();
 } elseif (strpos($path, '/nota') !== false) {
