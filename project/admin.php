@@ -26,18 +26,18 @@
                 <li><a href="php/logout.php">Logout</a></li>
               </ul>
             </div>
-            <div id = "data"></div>
         </nav>
-        <div class = "container-main">
-        </form>
-        </div>
+        
         <main>
+        <div class = "container-main">
+            <table class = "shopping-table">
+                <tbody id = "data">
+                </tbody>
+            </table>
+
+        </div>
         </main>
     </div>
-    <script src="javascript/stoc.js"></script>
-    <script>
-        fetchData();
-    </script>
 </body>
 
 </html>

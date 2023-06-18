@@ -10,5 +10,5 @@ if (!isset($_SESSION['username'])) {
 
 // User is logged in, display welcome message
 $username = $_SESSION['username'];
-echo 'Welcome, ' . $username . '!';
+//echo 'Welcome, ' . $username . '!';
 ?>

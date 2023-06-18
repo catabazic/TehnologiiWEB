@@ -30,9 +30,11 @@ main {
 
 .container-main {
     height: 100%;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 50% 50%;
     padding-top: 30px;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .image {
@@ -161,3 +163,33 @@ li>a {
     text-decoration: none;
 }
 
+table.shopping-table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    table-layout: auto;
+    display: inline-block;
+}
+
+.table-row {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .table-row td {
+    padding: 10px;
+  }
+  
+  .table-row .produs {
+    font-weight: bold;
+  }
+  
+  .pay-button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pay-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
