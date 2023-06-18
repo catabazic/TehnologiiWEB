@@ -41,14 +41,27 @@
                 <details>
                     <summary>VIZUALIZARE MENIU</summary>
                     <p> Acceseaza meniul din pagina dedicata -Meniu-. 
-                        Alege produsele preferate dand scroll pe pagina si adauga produselel in cos bifand check-box-ul de la final. 
+                        Alege produsele preferate dand scroll pe pagina si adaugand produsele in cos bifand check-box-ul de la final. 
                         Continua cumparaturile cu bauturile sau gustarile preferate!</p>
-                    <p> De asemenea poti comanda si prin intermediul URL-ului. De exemplu, daca doriti un ceai de zmeura,
-                        puteti scrie in URL astfel: "http://localhost/TehnologiiWEB/project/meniu.php/vreau/ceai?de=zmeura",
-                        iar produsul "Raspberries & Orchids" care este un ceai de zmeura, va fi adaugat in cos. In acest fel puteti
+                    <p> De asemenea poti comanda si prin intermediul URL-ului. De exemplu, daca doresti un ceai de zmeura,
+                        poti scrie in URL astfel: "http://localhost/TehnologiiWEB/project/meniu.php/vreau/ceai?de=zmeura",
+                        iar produsul "Raspberries & Orchids" care este un ceai de zmeura, va fi adaugat in cos. In acest fel poti
                         adauga in cos si urmatoarele sortimente de ceai: "cirese", "roibos", "merisore", "mar", "frcuteTropicale",
                         "vara", "zmeura", "lamaie", acestea fiind toate sortimentele noastre de ceai.
                     </p>
+                    <p> Tot in acelasi mod, poti comanda orice item din meniu, tastand doar "/vreau/numeleProdusului"</p>
+                    <p> Pentru a comanda tot prin URL, un combo cat mai repede si care sa iti inveseleasca ziua introdu acest URL: 
+                        "http://localhost/TehnologiiWEB/project/cos.php/vreau/suc?cu=tort" si vei gasi in cos un tort de ciocolata
+                        si un fresh de portocale.</p>
+                    <p> Totodata poti naviga intre pagini folosind URL-ul, iar la final cand doresti sa achiti nota de plata,
+                        introdu "/nota" care te va redirectiona catre cosul de cumparaturi. Daca doresti sa achiti nota cash,
+                        te asteptam la casa de marcat, iar daca doresti sa achiti prin card bancar, ai aceasta optiune in
+                        pagina "cos".
+                    </p>
+                    <p> Exista si restrictii in privinta comenzilor facute din URL. Daca vei incerca sa comanzi alcool nu va fi permis, fiind 
+                        un produs nepotrivit ceainariei noastre.
+                    </p>
+                    <p> Poti incerca sa introduceti in URL si: "/vreau/cinci" sau "/vreau/fericire" pentru un zambet in plus pe ziua de azi.</p>
                   </details>
                   <details>
                     <summary>COSUL DE CUMPARATURI</summary>
@@ -67,6 +80,7 @@
                   <div class=" cute-pic">
                     <img src=" imagini/ceasca_ceai.png" alt="ceasca_ceai" width = "350" height="350">
                   </div>
+                  <h2> Va multumim ca ati trecut pe la noi si va mai asteptam!</h2>
             </div>
         </main>
     </div>
